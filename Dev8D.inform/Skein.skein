@@ -6383,7 +6383,7 @@ Exits: south to Corridor - Westmost.
     <command xml:space="preserve">eat tea</command>
     <result xml:space="preserve">(first taking tea)
 You spill quite a bit of tea down your front as you bite and chew into the paper cup. You attempt to drink it instead. 
-You take a long slurp of tea. Ah... just what you needed. It&apos;s a shame the cups are so small!
+You take a long slurp of tea. Lovely, lovely tea. Perfect. It&apos;s a shame the cups are so small!
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -6400,7 +6400,7 @@ You take a long slurp of tea. Ah... just what you needed. It&apos;s a shame the 
     <result xml:space="preserve">(first taking tea)
 You attempt to drink the tea instead. Remember what happened last time.
 
-You take a long slurp of tea. You savour the tea, drinking it slowly. 
+You take a long slurp of tea. Still hot too! 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
@@ -6413,7 +6413,9 @@ You take a long slurp of tea. You savour the tea, drinking it slowly.
   </item>
   <item nodeId="node-0xc8845c0">
     <command xml:space="preserve">push tea</command>
-    <result xml:space="preserve">All that will create is a puddle on the table. And do you know what a room full of developers who have sensitive, expensive electronics don&apos;t want? That&apos;s right. That.
+    <result xml:space="preserve">All that will create is a puddle on the table. And do you know what a room full of developers who have sensitive, expensive electronics don&apos;t want?
+
+That&apos;s right. That.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -6441,8 +6443,7 @@ You take a long slurp of tea. You savour the tea, drinking it slowly.
   </item>
   <item nodeId="node-0xc8841a0">
     <command xml:space="preserve">throw coffee at developers</command>
-    <result xml:space="preserve">(first taking coffee)
-Futile.
+    <result xml:space="preserve">NO FOOD FIGHTS! Seriously now. Imagine if your laptop got hit by coffee and ruined?
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>

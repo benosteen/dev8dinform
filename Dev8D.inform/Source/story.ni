@@ -432,7 +432,7 @@ First floor stairs is above Ground floor stairs. "[generic stairwell desc].[para
 
 Section 4 - Third floor stairs
 
-Third floor stairs is above First floor stairs. "[generic stairwell desc].[paragraph break]"
+Third floor stairs is above First floor stairs. "[generic stairwell desc]."
 
 [1F rooms - Gallery room, The Venue and the Duck and Dive restaurant.]
 
