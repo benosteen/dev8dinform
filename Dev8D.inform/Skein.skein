@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x217e8a0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>GNOME Inform 7</generator>
-  <activeNode nodeId="node-0x80f2b90"/>
+  <activeNode nodeId="node-0xc8841a0"/>
   <item nodeId="node-0x217e8a0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -14,16 +14,16 @@ You walk out from Russell Square station and load up the directions to the ULU e
 
 Dev8D
 A day at Dev8D by Ben O&apos;Steen
-Release 1 / Serial number 120107 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 120108 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 ULU Entrance
 You look around the foyer, scanning across the faces of the various students sat, engrossed in their laptops. You notice a small A4 sign for Dev8D on the north wall. To the west is a snack shop, selling all sorts of sweets, sandwiches and hot drinks. At least, it would be if it were open. There is a small lift to the north, but that is being used to take boxes of drinks upstairs. A lot of drinks.
 
 You see an unmanned trestle table sagging with the weight of a huge pile of flyers. Someone has attempted to make the table and everything on it look old and dusty, but with the handicap of using only glitter, tinsel and coloured paper.
 
-Nestled amongst the flyers, is an old lamp. Unlike most of the other items on the table, the lamp looks old simply because it is. For some reason, a slightly warped plastic arrow is also on the table. You also spot a red fish sprinkled with glitter on the table as well. Why someone would use so much glitter isn&apos;t obvious, unless it&apos;s a thinly-veiled cry for help. A shiny red keycard pokes out from underneath the fish. You note that it has somehow remained glitter-free.
+Nestled amongst the flyers, is an old lamp. Unlike most of the other items on the table, the lamp looks old simply because it is. For some reason, a slightly warped plastic arrow is also on the table, positioned as if it is important. There is a red fish almost buried in glitter next to it on the table. Why someone would use so much glitter isn&apos;t obvious, unless they are doing it as a (thinly-veiled) cry for help. A shiny red keycard pokes out from underneath the fish. You note that it has somehow remained glitter-free.
 
-You can see a dusty table (on which are an old lamp, a red fish, a shiny red keycard, and a pile of flyers) here.
+You can see a dusty table (on which is a pile of flyers) here.
 
 Exits: north.
 
@@ -57,6 +57,7 @@ Exits: north.
       <child nodeId="node-0x3a776e0"/>
       <child nodeId="node-0x5f22710"/>
       <child nodeId="node-0x7972e00"/>
+      <child nodeId="node-0x80f2cf0"/>
     </children>
   </item>
   <item nodeId="node-0x217ea00">
@@ -65,7 +66,7 @@ Exits: north.
 Ground floor stairs
 In the low-light of the stairwell, you see a set of sharp-angled stairs spiralling upwards, fenced in by a utilitarian handrail, supported by thin banisters. The parts of the walls you can see are the kind of beige colour that cannot be described accurately without the words &quot;institutional&quot; and &quot;depressing&quot;. It won&apos;t be how the colour is officially labelled, but labels are rarely honest. The noise from the rest of the building provides a background hum of activity. 
 
-The only way is UP! or something like that. 
+The only way is UP! (or something like that.) 
 
 There is a message board lining the walls of the stairwell.
 
@@ -73,7 +74,7 @@ Exits: up and south to ULU Entrance.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
+    <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -84,6 +85,7 @@ Exits: up and south to ULU Entrance.
       <child nodeId="node-0x343e870"/>
       <child nodeId="node-0x3217b50"/>
       <child nodeId="node-0x3217cb0"/>
+      <child nodeId="node-0xab514a0"/>
     </children>
   </item>
   <item nodeId="node-0x217eb60">
@@ -5836,6 +5838,619 @@ Exits: north to First floor stairs.
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
   </item>
+  <item nodeId="node-0xab514a0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Ground floor stairs
+A spiralling staircase, hemmed in by harsh railings and beige walls. The noise from the rest of the building provides a background hum of activity. 
+
+The only way is up the stairs, or south, back to the entrance. 
+
+There is a message board lining the walls of the stairwell.
+
+Exits: up and south to ULU Entrance.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xab51340"/>
+    </children>
+  </item>
+  <item nodeId="node-0xab51340">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+First floor stairs
+A spiralling staircase, hemmed in by harsh railings and beige walls. The noise from the rest of the building provides a background hum of activity.
+
+You see that the Gallery bar is north through the double doors, but now is no time to take a drink. You can go down to the ground floor or up a few flights to the third floor, which is where most of Dev8D will take place.
+
+Exits: down to Ground floor stairs, up, north and south.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xab511e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xab511e0">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Third floor stairs
+A spiralling staircase, hemmed in by harsh railings and beige walls. The noise from the rest of the building provides a background hum of activity.
+
+
+
+Exits: south and down to First floor stairs.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xab51600"/>
+    </children>
+  </item>
+  <item nodeId="node-0xab51600">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">
+First floor stairs
+A spiralling staircase, hemmed in by harsh railings and beige walls. The noise from the rest of the building provides a background hum of activity.
+
+You see that the Gallery bar is north through the double doors. You can go down to the ground floor or up a few flights to the third floor.
+
+Exits: down to Ground floor stairs, up to Third floor stairs, north and south.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xab51760"/>
+    </children>
+  </item>
+  <item nodeId="node-0xab51760">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xab518c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xab518c0">
+    <command xml:space="preserve">x board</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xab51a20"/>
+    </children>
+  </item>
+  <item nodeId="node-0xab51a20">
+    <command xml:space="preserve">d</command>
+    <result xml:space="preserve">
+Ground floor stairs
+A spiralling staircase, hemmed in by harsh railings and beige walls. The noise from the rest of the building provides a background hum of activity. 
+
+The only way is up the stairs, or south, back to the entrance. 
+
+There is a message board lining the walls of the stairwell.
+
+Exits: up to First floor stairs and south to ULU Entrance.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xab51b80"/>
+    </children>
+  </item>
+  <item nodeId="node-0xab51b80">
+    <command xml:space="preserve">x board</command>
+    <result xml:space="preserve">A number of panels of dark gray message board, covered with miscellaneous student posters about society events, music parties, and sports. There are a few odd posters stuck up here too, you notice a poster sporting what looks like 8-bit Zelda graphics.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xab51ce0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xab51ce0">
+    <command xml:space="preserve">take strip</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xab51e40"/>
+    </children>
+  </item>
+  <item nodeId="node-0xab51e40">
+    <command xml:space="preserve">x poster</command>
+    <result xml:space="preserve">The sheet is a scene from the very first Zelda game. Above an old man who is standing between two bright red blocky fires is text that reads: &quot;It is dangerous to go alone. Take this!&quot;. The bottom of the sheet has been cut into little strips that you can pull off. Printed onto each is an orange sword, the master sword from the game. 
+
+Neat.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbef6030"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbef6030">
+    <command xml:space="preserve">take strip</command>
+    <result xml:space="preserve">Even though It&apos;s not that dangerous to go alone, you tear the strip from the bottom of the poster. 
+
+Scaredy cat.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbef6190"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbef6190">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+First floor stairs
+A spiralling staircase, hemmed in by harsh railings and beige walls. The noise from the rest of the building provides a background hum of activity.
+
+You see that the Gallery bar is north through the double doors. You can go down to the ground floor or up a few flights to the third floor.
+
+Exits: down to Ground floor stairs, up to Third floor stairs, north and south.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbef62f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbef62f0">
+    <command xml:space="preserve">u</command>
+    <result xml:space="preserve">
+Third floor stairs
+A spiralling staircase, hemmed in by harsh railings and beige walls. The noise from the rest of the building provides a background hum of activity.
+
+
+
+Exits: south and down to First floor stairs.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbef6450"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbef6450">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Corridor - Middle
+REGISTRATION DESK CORRIDOR.
+
+You can see a helpful woman here.
+
+Exits: east, west, north to Third floor stairs, southeast and southwest.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbef65b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbef65b0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Corridor - West
+corridor west.
+
+Exits: east to Corridor - Middle, west and south.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbef6710"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbef6710">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Corridor - Westmost
+BASECAMP CORRIDOR.
+
+Exits: east to Corridor - West and north.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbef6870"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbef6870">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Basecamp
+You enter the door and come face-to-face (well, face-to-back) with a crowd of people, all of whom are looking intently towards the other side of the room.
+
+Exits: south to Corridor - Westmost.
+
+It seems that things are just about to start, so you press forward to get a decent enough view. You manoeuvre through the throng of developers, hackers, academics and other delegates as politely as you can until you manage to get a view of the organiser who is just about to speak.
+
+&quot;Welcome! Thank you all for coming to this, the fourth Dev8D! Yes, fourth! I&apos;m so glad to see lots of new faces out there, standing amongst the faces I already know well! You know, helping people meet up and talk about the things that interest or even stump you is one of the key reasons this event exists. Many of you work in small teams and can feel isolated. Sometimes you alone are the team!&quot;
+
+You hear quite a few knowing laughs from the people in the crowd. Seems you aren&apos;t alone here after all. (Maybe you should put that master sword back where you found it, eh?).
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbef69d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbef69d0">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbef6b30"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbef6b30">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbef6c90"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbef6c90">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+He continues: &quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbef6df0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbef6df0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+If you haven&apos;t yet registered and picked up your Dev8D lanyard, please do so as soon as you can - it has your name on it!
+
+Basecamp
+Normal BASECAMP DESC.
+
+You can see a refreshments table (on which are coffee, tea, a snack buffet, and a strange code fragment) and a Basecamp schedule board here.
+
+Exits: south to Corridor - Westmost.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbf28020"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbf28020">
+    <command xml:space="preserve">x board</command>
+    <result xml:space="preserve">BASECAMP SCHEDULE DESC.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbf28180"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbf28180">
+    <command xml:space="preserve">x buffet</command>
+    <result xml:space="preserve">A selection of different types of snacks piled high - mainly muffins. It looks like a muffin re-enactment of the Ambassador&apos;s Ferraro Rocher pyramid. There is a strange code fragment on the table.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbf282e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbf282e0">
+    <command xml:space="preserve">take fragment</command>
+    <result xml:space="preserve">You take the paper, but at a glance you can tell that it is encrypted - you can&apos;t tell if it will contain important information or a recipe for good Caesar salad. Well...  it&apos;s probably worth decoding then. Good recipes are hard to come by.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbf28440"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbf28440">
+    <command xml:space="preserve">push buffet</command>
+    <result xml:space="preserve">You place your hand on the pile of muffins to push it over. &quot;Hey!&quot; says a voice from across the table &quot;You&apos;ll knock them all down! Stop that!&quot;. The people around you turn and begin to stare at you. You realise just how ridiculous you look at this moment, and make a tactical retreat from the table.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbf285a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbf285a0">
+    <command xml:space="preserve">eat buffet</command>
+    <result xml:space="preserve">You pull a chair up to the table and tuck a napkin into your shirt. You may be here some time.
+
+Or so you thought. Everyone is looking puzzled at you. Perhaps you should just eat the muffins one at a time, like everyone else.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbf289c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbf289c0">
+    <command xml:space="preserve">actions</command>
+    <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbf28860"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbf28860">
+    <command xml:space="preserve">eat buffet</command>
+    <result xml:space="preserve">[eating the snack buffet]
+No, just one at a time. You were thinking about going on a diet soon anyhow.
+[eating the snack buffet - ended without result]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbf28700"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbf28700">
+    <command xml:space="preserve">actions verbose</command>
+    <result xml:space="preserve">I only understood you as far as wanting to actions.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbf28b20"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbf28b20">
+    <command xml:space="preserve">actions off</command>
+    <result xml:space="preserve">Actions listing off.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbf28c80"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbf28c80">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Basecamp
+Normal BASECAMP DESC.
+
+You can see a refreshments table (on which are coffee, tea, and a snack buffet) and a Basecamp schedule board here.
+
+Exits: south to Corridor - Westmost.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xbf28de0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xbf28de0">
+    <command xml:space="preserve">weat tea</command>
+    <result xml:space="preserve">That noun did not make sense in this context.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xc884040"/>
+    </children>
+  </item>
+  <item nodeId="node-0xc884040">
+    <command xml:space="preserve">eat tea</command>
+    <result xml:space="preserve">(first taking tea)
+You spill quite a bit of tea down your front as you bite and chew into the paper cup. You attempt to drink it instead. 
+You take a long slurp of tea. Ah... just what you needed. It&apos;s a shame the cups are so small!
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xc884300"/>
+    </children>
+  </item>
+  <item nodeId="node-0xc884300">
+    <command xml:space="preserve">eat tea</command>
+    <result xml:space="preserve">(first taking tea)
+You attempt to drink the tea instead. Remember what happened last time.
+
+You take a long slurp of tea. You savour the tea, drinking it slowly. 
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xc8845c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xc8845c0">
+    <command xml:space="preserve">push tea</command>
+    <result xml:space="preserve">All that will create is a puddle on the table. And do you know what a room full of developers who have sensitive, expensive electronics don&apos;t want? That&apos;s right. That.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xc884460"/>
+    </children>
+  </item>
+  <item nodeId="node-0xc884460">
+    <command xml:space="preserve">push coffee</command>
+    <result xml:space="preserve">No.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xc8841a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xc8841a0">
+    <command xml:space="preserve">throw coffee at developers</command>
+    <result xml:space="preserve">(first taking coffee)
+Futile.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
   <item nodeId="node-0x34d6b70">
     <command xml:space="preserve">go up</command>
     <result xml:space="preserve">You can&apos;t go that way.
@@ -9310,7 +9925,7 @@ Exits: south to Corridor - Westmost.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9326,7 +9941,7 @@ Well, it did until it was pushed underneath that fish.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9340,7 +9955,7 @@ Well, it did until it was pushed underneath that fish.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9354,7 +9969,7 @@ Well, it did until it was pushed underneath that fish.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9368,7 +9983,7 @@ Well, it did until it was pushed underneath that fish.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9382,7 +9997,7 @@ Well, it did until it was pushed underneath that fish.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9405,7 +10020,7 @@ Exits: north.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9420,7 +10035,7 @@ The title of the flyer is &quot;GET LAMP - Interactive fiction in the 21st centu
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9435,7 +10050,7 @@ That&apos;s plainly inedible.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9450,7 +10065,7 @@ Dropped.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9465,7 +10080,7 @@ Taken.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9480,7 +10095,7 @@ Futile.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9502,7 +10117,7 @@ Exits: up and south to ULU Entrance.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9522,7 +10137,7 @@ Exits: down to Ground floor stairs, up, north and south.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9536,7 +10151,7 @@ Exits: down to Ground floor stairs, up, north and south.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9549,7 +10164,7 @@ Exits: down to Ground floor stairs, up, north and south.
     <result xml:space="preserve">[Abstracted.]
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9568,7 +10183,7 @@ The ARDrone swoops past your head.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9587,7 +10202,7 @@ The ARDrone swoops past your head.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9600,7 +10215,7 @@ The ARDrone swoops past your head.
     <result xml:space="preserve">[Abstracted.]
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9614,7 +10229,7 @@ The ARDrone swoops past your head.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9631,7 +10246,7 @@ Exits: down to Ground floor stairs, up, north and south.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -9648,7 +10263,763 @@ Exits: down to Ground floor stairs, up, north and south.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x80f2cf0">
+    <command xml:space="preserve">abstract me to 3D</command>
+    <result xml:space="preserve">[Abstracted.]
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x80f2e50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x80f2e50">
+    <command xml:space="preserve">hi</command>
+    <result xml:space="preserve">(addressing Ben O&apos;Steen)
+You address the coder.  &quot;Hi!&quot;
+
+&quot;Hello!  What do you want to talk about?&quot;
+
+(You could ask him about Programming languages.)
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f1ba45cb030"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f1ba45cb030">
+    <command xml:space="preserve">a languages</command>
+    <result xml:space="preserve">You remember back to the orientation talk. &quot;I&apos;m not sure what language I should go for at lunch. What do you think?&quot; you ask.
+
+He shrugs his shoulders a little. &quot;To be honest, they are all pretty much the same. Pick one, learn it by writing actual code and most importantly, find out about the libraries you should use and more importantly, the libraries you shouldn&apos;t. The best way you can do that is by chatting with your peers - you know, the people like you, doing similar things to you. You can learn the most from them.&quot;
+
+He turns back to his laptop and opens yet another terminal on the screen - you could&apos;ve sworn you heard the laptop&apos;s fans sigh audibly. He brings up a python prompt and turns back to you. 
+
+&quot;I have to say though, I have a real soft spot for python. Does the job, clear, easy, nice. Well worth putting time in learning. There&apos;s also javascript, which is a crucial language to know if you are building a web service.&quot;
+
+(You could ask him about Python, Javascript, or Programming languages.)
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f1ba45cb190"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f1ba45cb190">
+    <command xml:space="preserve">python</command>
+    <result xml:space="preserve">You ask &quot;So... if I wanted to learn about python and its libraries and stuff...?&quot;
+
+&quot;Google it&quot; he replies with a smile. He continues to type into one of the many terminal windows on his screen.
+
+&quot;Er... okay.&quot; You had thought he would help a little more than that. You turn to leave.
+
+&quot;Wait! I&apos;m kidding!&quot; he says. &quot;Ordinarily I&apos;d tell you to search for that online, as you&apos;ll find some of the best material there, like &quot;Dive into Python&quot;, but look around you. There&apos;s a ton of collective python experience here, the kind of experience that make the difference between searching for hours or having an issue sorted out with a quick chat.&quot; He &quot;alt-tab&apos;s back to a browser window. &quot;In fact, I think there is a python workshop due to start soon if you are keen. It&apos;s taking place next door in room 3B. Just remember, it&apos;s the community of people that makes a language great, not the other way around. Ask questions, get involved. As with anything, you get out from it more than what you put it, but you have to put something in first!&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f1ba45cb5b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f1ba45cb5b0">
+    <command xml:space="preserve">python</command>
+    <result xml:space="preserve">You ask about python again. He raises an eyebrow &quot;Have you checked next door yet?&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f1ba45cb710"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f1ba45cb710">
+    <command xml:space="preserve">cryptography</command>
+    <result xml:space="preserve">There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f1ba45cb2f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f1ba45cb2f0">
+    <command xml:space="preserve">a cryptography</command>
+    <result xml:space="preserve">&quot;Er... what?
+
+(You could ask him about Python, Javascript, or Programming languages.)
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f1ba45cb450"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f1ba45cb450">
+    <command xml:space="preserve">abstract strange code fragment to me</command>
+    <result xml:space="preserve">[Abstracted.]
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f1ba45cb870"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f1ba45cb870">
+    <command xml:space="preserve">x fragment</command>
+    <result xml:space="preserve">A piece of paper, torn off from a larger piece. It is covered in lots of lower-case letters, arranged mostly as a block of characters with a fixed spacing between characters reminiscent of a computer terminal. It reminds you of the sort of paper receipts are printed on. There is an odd mark on the back of the paper which looks a little like a snake.
+----------------------------
+
+zqkszwtt
+
+vmdmzowvvioqdmgwccxv
+mdmzowvvitmbgwclwevv
+mdmzowvvizcvizwcvliv
+llmamzbgwcvmdmzowvvi
+uismgwckzgvmdmzowvvi
+aigowwljgmvmdmzowvvi
+bmttitqmivlpczbgwc
+
+----------------------------
+
+Odd.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f1ba45cb9d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f1ba45cb9d0">
+    <command xml:space="preserve">x fragment</command>
+    <result xml:space="preserve">----------------------------
+
+zqkszwtt
+
+vmdmzowvvioqdmgwccxv
+mdmzowvvitmbgwclwevv
+mdmzowvvizcvizwcvliv
+llmamzbgwcvmdmzowvvi
+uismgwckzgvmdmzowvvi
+aigowwljgmvmdmzowvvi
+bmttitqmivlpczbgwc
+
+----------------------------
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f1ba45cbb30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f1ba45cbb30">
+    <command xml:space="preserve">show fragment to ben</command>
+    <result xml:space="preserve">You show the code fragment to him. 
+
+He looks at it and his eyes widen a little. &quot;Ah, yeah, that. It&apos;s a bit of a joke really! Have you solved it? Do you get it?&quot; he asks.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f1ba45cbc90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f1ba45cbc90">
+    <command xml:space="preserve">a crypto</command>
+    <result xml:space="preserve">&quot;Advanced cryptography sounds fun. How about that?&quot; you ask.
+
+&quot;You remember when I told you to google python? Yeah, well, there is a huge amount to modern cryptography and it&apos;s hard to explain without some preparation. I could ask around for you to see if there is someone willing to do a Lightning talk on cryptography, I&apos;m sure there&apos;d be interest in something like that. You could ask around too, you know. There&apos;s plenty of flexibility in the schedule later on as we purposefully left space for this sort of thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f1ba45cbdf0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f1ba45cbdf0">
+    <command xml:space="preserve">a cryptography</command>
+    <result xml:space="preserve">&quot;Er... what?
+
+(You could ask him about Python, Codebreaking, Javascript, or Programming languages.)
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x9f6c000"/>
+    </children>
+  </item>
+  <item nodeId="node-0x9f6c000">
+    <command xml:space="preserve">a codebreaking</command>
+    <result xml:space="preserve">He looks up at the mention of codebreaking. &quot;It would be cool if someone did a lightning talk or session on that! What do you want to know about it? Do you know about the simple stuff like caesar ciphers or more advanced crypto?&quot;
+
+(You could ask him about Python, Caesar cipher, Advanced crypto, Javascript, or Programming languages.)
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x9f6c160"/>
+    </children>
+  </item>
+  <item nodeId="node-0x9f6c160">
+    <command xml:space="preserve">a caesar</command>
+    <result xml:space="preserve">&quot;What about the Caesar cipher? How does that work?&quot; you ask. 
+
+&quot;It&apos;s a very simple code. Here, let me show you.&quot; he says, turning the laptop towards you. &quot;Imagine the alphabet you want to use written out twice, one row above another. For example:&quot; 
+
+(on screen)
+A B C D E F G H I...
+A B C D E F G H I...
+
+By shifting the second row to the right or left by some number of letters, say, 3 letters to the right, you can create a caesar cipher encoder:
+
+A B C D E F G H I...
+X Y Z A B C D E F...
+
+He points to the screen &quot;Note how the letters wrap around here. To encode a letter, you find it on the top row and use the letter under it. In this way, BED becomes YBA, HAG becomes EXD and so on. ROT 13  or &quot;rotate by 13&quot; is a well known variation on the caesar cipher. Pretty easy to code this in python too.
+&quot;
+(You could ask him about Python, Caesar cipher, Advanced crypto, ROT code, Javascript, or Programming languages.)
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x9f6c2c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x9f6c2c0">
+    <command xml:space="preserve">a caesar</command>
+    <result xml:space="preserve">You ask again about the Caesar cipher. 
+
+&quot;Turn your letters into numbers, add or subtract to them and then turn them back to text. Nothing more to it than that really.&quot; he says with a shrug.
+
+(You could ask him about Python, Caesar cipher, Advanced crypto, ROT code, Javascript, or Programming languages.)
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x9f6c420"/>
+    </children>
+  </item>
+  <item nodeId="node-0x9f6c420">
+    <command xml:space="preserve">a crypto</command>
+    <result xml:space="preserve">&quot;Would you run a session on advanced cryptography or ciph...&quot;
+
+He cuts in before you can finish. &quot;Sorry, not today, I&apos;ve already got most of the day booked up. Besides, I&apos;m sure there are a lot of other people who are far more qualified. I hope you can find someone to talk to about it.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x9f6c580"/>
+    </children>
+  </item>
+  <item nodeId="node-0x9f6c580">
+    <command xml:space="preserve">a python</command>
+    <result xml:space="preserve">You ask about python again. He raises an eyebrow &quot;Have you checked next door yet?&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x9f6c6e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x9f6c6e0">
+    <command xml:space="preserve">languages</command>
+    <result xml:space="preserve">You ask him again about programming languages. 
+
+&quot;Well, I&apos;m not sure what else you want - I&apos;ve already told you that python and javascript are worth learning. You don&apos;t have to choose one at lunch. If the conversation isn&apos;t helping you then get up and try a different table.&quot; 
+(You could ask him about Python, Caesar cipher, Advanced crypto, ROT code, Javascript, or Programming languages.)
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x9f6c840"/>
+    </children>
+  </item>
+  <item nodeId="node-0x9f6c840">
+    <command xml:space="preserve">code</command>
+    <result xml:space="preserve">(the strange code fragment)
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x9f6c9a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x9f6c9a0">
+    <command xml:space="preserve">ask about code</command>
+    <result xml:space="preserve">(the strange code fragment)
+You show the code fragment to him. 
+
+He looks at it and his eyes widen a little. &quot;Ah, yeah, that. It&apos;s a bit of a joke really! Have you solved it? Do you get it?&quot; he asks.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x9f6cb00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x9f6cb00">
+    <command xml:space="preserve">a ROT</command>
+    <result xml:space="preserve">Ben&apos;s stomach rumbles loudly. He says &quot;Sorry, I&apos;m starving. Let me finished this code so I can get some food from the Basecamp.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x9f6cdc0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x9f6cdc0">
+    <command xml:space="preserve">abstract me to ULU Entrance</command>
+    <result xml:space="preserve">[Abstracted.]
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x9f6cc60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x9f6cc60">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa656090"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa656090">
+    <command xml:space="preserve">take lamp</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa6561f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa6561f0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa656350"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa656350">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa6564b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa6564b0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa656610"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa656610">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&quot;Hey!&quot; An angry man shouts out at you. &quot;That&apos;s my lamp! What the hell do you think you are playing at? Give it here!&quot; He snatches the old lamp from you, and looks like he is about to erupt. Eventually, he gets himself under control and just shakes his head in frustration at you and stalks off, the lamp swinging beside him.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa656770"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa656770">
+    <command xml:space="preserve">take lamp</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa6568d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa6568d0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa656a30"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa656a30">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa656b90"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa656b90">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa656cf0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa656cf0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+You are tapped on the shoulder twice, with some force behind each tap. 
+
+You turn round to see the angry man from before &quot;You again?&quot; he says &quot;That lamp is an heirloom, it&apos;s not worth anything to anyone but me, so leave off!&quot; He grabs the lamp and walks off
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa656e50"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa656e50">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa795030"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa795030">
+    <command xml:space="preserve">take lamp</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa795190"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa795190">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa7952f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa7952f0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa795450"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa795450">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa7955b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa7955b0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+You are slammed to the floor by something big. You roll over but see nothing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa795710"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa795710">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">ULU Entrance
+The shop is still closed it seems and the Sisyphean challenge of keeping the bar stocked with booze and J20 is still ongoing. Students are quietly working and chatting in the seated area.
+
+You see an unmanned trestle table sagging with the weight of a huge pile of flyers. Someone has attempted to make the table and everything on it look old and dusty, but with the handicap of using only glitter, tinsel and coloured paper.
+
+Nestled amongst the flyers, is an old lamp. Unlike most of the other items on the table, the lamp looks old simply because it is. For some reason, a slightly warped plastic arrow is also on the table, positioned as if it is important. There is a red fish almost buried in glitter next to it on the table. Why someone would use so much glitter isn&apos;t obvious, unless they are doing it as a (thinly-veiled) cry for help. A shiny red keycard pokes out from underneath the fish. You note that it has somehow remained glitter-free.
+
+You can see a dusty table (on which is a pile of flyers) here.
+
+Exits: north.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa795870"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa795870">
+    <command xml:space="preserve">touch arrow</command>
+    <result xml:space="preserve">Ew. The plastic is tacky and looks like it is decomposing from age. You&apos;d rather not do that at all.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa7959d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa7959d0">
+    <command xml:space="preserve">lick arrow</command>
+    <result xml:space="preserve">Ew. The plastic is tacky and looks like it is decomposing from age. You&apos;d rather not do that at all.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa795b30"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa795b30">
+    <command xml:space="preserve">x arrow</command>
+    <result xml:space="preserve">A toy arrow that might be made out of a spongy plastic foam, like that used to cover bats to make them &quot;safe&quot;. It&apos;s a dismal grey in colour, with a few dark squiggles along one side..
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa795c90"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa795c90">
+    <command xml:space="preserve">x arrow</command>
+    <result xml:space="preserve">You look at the dark squiggles more closely. You discover that if you angle yourself just so that you can make out the faded words that run along one side of the arrow: 
+
+Guaranteed to kill 99.91f grues!
+(Note: Dye used in this recreational toy is toxic. Not safe for children under 3 years of age. Does not kill grues. Use at own risk.)&quot;.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xa795df0"/>
+    </children>
+  </item>
+  <item nodeId="node-0xa795df0">
+    <command xml:space="preserve">x arrow</command>
+    <result xml:space="preserve">You look at the dark squiggles more closely. You discover that if you angle yourself just so that you can make out the faded words that run along one side of the arrow: 
+
+Guaranteed to kill 99.91f grues!
+(Note: Dye used in this recreational toy is toxic. Not safe for children under 3 years of age. Does not kill grues. Use at own risk.)&quot;.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0xab51080"/>
+    </children>
+  </item>
+  <item nodeId="node-0xab51080">
+    <command xml:space="preserve">smell arrow</command>
+    <result xml:space="preserve">Ew. The plastic is tacky and looks like it is decomposing from age. You&apos;d rather not do that at all.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
