@@ -125,7 +125,7 @@ Python is a unfamiliar thing. It is unused.
 Codebreaking is a unfamiliar thing.
 Caesar cipher is a familiar thing.
 Advanced crypto is a familiar thing.
-ROT code is an unfamiliar thing.
+decoder is an unfamiliar thing.
 Rickroll and piano cat are unfamiliar things.
 
 Ruby is a unfamiliar thing.
@@ -173,7 +173,7 @@ When play begins:
 	[some item setup]
 	remove the master sword paper strip from play;
 	remove the refreshments table from play;
-	remove the Basecamp schedule board from play.
+	remove the Schedule board from play.
 
 Getting Ready is a scene. Getting Ready begins when play begins. Getting Ready ends when Orientation Talk begins.
 
@@ -193,7 +193,7 @@ Event Starts begins when Orientation Talk ends.
 
 When Event Starts begins:
 	remove the crowd of people from play;
-	move the basecamp schedule board to Basecamp;
+	move the Schedule board to Basecamp;
 	move the refreshments table to Basecamp;
 	try looking.
 
@@ -504,11 +504,19 @@ Chapter 3 - Room Generics (backdrops, etc)
 
 Section 1 - Random developer backdrop
 
-The developers are a backdrop. The developers are in Event Area.
+The developers are a backdrop. The developers are in Event Area and Work Rooms.
 
 Understand "table of developers" as developers.
 
 The description of the developers is "[one of]You see two people sat in front of a single laptop. One of them is typing on it while listening to the other, who is advising him on what to do. You overhear small snatches of their conversation, enough to understand that the one typing is getting hints on how to plug some security holes in his Apache setup[or]A loud buzzing sound breaks the quiet and is quickly followed up by laughter and cheering. You turn to see that a small crowd of people are huddled around an arduino board, which has been connected up to some sort of contraption. You overhear one of the crowd saying 'Quick, tweet it again!'. You turn back to what you are doing as the buzzer goes off for the second time[or]On one table, you see someone chatting to a small group of others, gesticulating towards a large diagram they've stuck to the wall. From what you can make out, she is explaining how she has been using message queueing in her services[or]Someone waves at you. At least, you thought they were waving at you. You take a better look and spot the Kinect camera sitting in front of them. All that hand-waving has a purpose, it seems[or]You peer over the shoulder of a particularly busy developer and catch a glimpse of a some sort of data visualisation she's been working on. You make a note to talk to her about it later on[or]You catch sight of a couple of developers having a heated, but friendly argument. The discussion goes back and forth for a little while, until someone interrupts them and says 'Oh god, not this flame war again.' They pause briefly until one of them starts the argument rolling again with an obviously inflammatory 'But it's so much nicer to use!' comment[in random order]."
+
+Section 2 - Empty chair backdrop
+
+The event chairs are a backdrop. The chairs are in Event Area.
+
+Understand "chairs" or "seat" as event chairs.
+
+The description of the event chairs is "You see a number of chairs here, some occupied, some not. You decide that now isn't the best time to take a seat."
 
 Chapter 4 - Room 3A
 
@@ -522,17 +530,19 @@ Chapter 6 - Room 3C
 
 The description of 3C is "3C DESCRIPTION."
 
-Graham Klyne is a male hacker in 3C. Graham Klyne is hacking.
-
-Understand "Graham" as Graham Klyne.
-
 Chapter 7 - Room 3D
 
 The description of 3D is "3D DESCRIPTION."
 
-The large Project room desk is a supporter in 3D.
+Graham Klyne is a male hacker in 3D. Graham Klyne is hacking.
 
-The whirring laptop is on the large Project room desk. The description of the whirring laptop is "This poor machine is obviously doing 8 things at the same time from the noise it's making. That, or just that it really needs to be cleaned[if the strange code fragment is handled]. You recognise a logo on the screen as being the same as that you found on the code fragment[end if]."
+Understand "Graham" as Graham Klyne.
+
+The large project desk, the electronics desk and the small project desk are supporters in 3D.
+
+The Additive printer is on the large project room desk. It is fixed in place. The printed name of it is "3D Printer".
+
+The whirring laptop is on the small project desk. The description of the whirring laptop is "This poor machine is obviously doing 8 things at the same time from the noise it's making. That, or just that it really needs to be cleaned[if the strange code fragment is handled]. You recognise a logo on the screen as being the same as that you found on the code fragment[end if]."
 
 Ben O'Steen is a male hacker in 3D. Ben O'Steen is hungry.
 
@@ -552,9 +562,9 @@ Basecamp is north of the Corridor - Westmost. "[if not unvisited]Normal BASECAMP
 
 The crowd of people is scenery. It is in the Basecamp. The description of the crowd of people is "You can see people all around you, standing shoulder to shoulder."
 
-There is a Basecamp schedule board in the Basecamp. It is fixed in place.
+There is a Schedule board in the Basecamp. It is fixed in place.
 
-The description of the Basecamp schedule board is "BASECAMP SCHEDULE DESC."
+The description of the Schedule board is "BASECAMP SCHEDULE DESC."
 
 There is a refreshments table in the Basecamp. There is tea and coffee on the refreshments table.
 
@@ -693,7 +703,7 @@ Instead of giving a food (called thisfood) to Ben O'Steen:
 		move thisfood to Muffin Limbo;
 		now Ben O'Steen is sated.
 
-The ask-suggestions of Ben O'Steen are { programming languages, python, Codebreaking, ROT code, Javascript }.
+The ask-suggestions of Ben O'Steen are { programming languages, python, Codebreaking, decoder, Javascript }.
 The unsuggested-topics of Ben O'Steen are {rickroll}.
 
 Response of Ben O'Steen when shown the strange code fragment or asked about the strange code fragment:
@@ -730,10 +740,10 @@ Response of Ben O'Steen when asked about advanced crypto:
 	say "[one of]'Advanced cryptography sounds fun. How about that?' you ask.[paragraph break]'[if python is used]You remember when I told you to google python? Yeah, well, there is a huge amount to modern cryptography and it's hard to explain without some preparation. [end if]I could ask around for you to see if there is someone willing to do a [lightning talk on Codebreaking], I'm sure there'd be interest in something like that. You could ask around too, you know. There's plenty of flexibility in the schedule later on as we purposefully left space for this sort of thing.[make lightning talk on Codebreaking known][or]'[first time]Would you run a session on advanced cryptography or ciph...'[paragraph break]He cuts in before you can finish. 'Sorry, not today, I've already got most of the day booked up. Besides, I'm sure there are a lot of other people who are far more qualified. [only]I hope you can find someone to talk to about it.'[stopping]"
 
 Response of Ben O'Steen when asked about caesar cipher:
-	say "[one of]'What about the Caesar cipher? How does that work?' you ask. [paragraph break]'It's a very simple code. Here, let me show you.' he says, turning the laptop towards you. 'Imagine the alphabet you want to use written out twice, one row above another. For example:' [paragraph break](on screen)[line break][fixed letter spacing]A B C D E F G H I...[line break]A B C D E F G H I...[variable letter spacing][paragraph break]By shifting the second row to the right or left by some number of letters, say, 3 letters to the right, you can create a caesar cipher encoder:[paragraph break][fixed letter spacing]A B C D E F G H I...[line break]X Y Z A B C D E F...[variable letter spacing][paragraph break]He points to the screen 'Note how the letters wrap around here. To encode a letter, you find it on the top row and use the letter under it. In this way, BED becomes YBA, HAG becomes EXD and so on. ROT 13  or 'rotate by 13' is a well known variation on the caesar cipher. Pretty easy to code this in python too.[make ROT code known]'[or]You ask again about the Caesar cipher. [paragraph break]'Turn your letters into numbers, add or subtract to them and then turn them back to text. Nothing more to it than that really.' he says with a shrug.[stopping]";
+	say "[one of]'What about the Caesar cipher? How does that work?' you ask. [paragraph break]'It's a very simple code. Here, let me show you.' he says, turning the laptop towards you. 'Imagine the alphabet you want to use written out twice, one row above another. For example:' [paragraph break](on screen)[line break][fixed letter spacing]A B C D E F G H I...[line break]A B C D E F G H I...[variable letter spacing][paragraph break]By shifting the second row to the right or left by some number of letters, say, 3 letters to the right, you can create a caesar cipher encoder:[paragraph break][fixed letter spacing]A B C D E F G H I...[line break]X Y Z A B C D E F...[variable letter spacing][paragraph break]He points to the screen 'Note how the letters wrap around here. To encode a letter, you find it on the top row and use the letter under it. In this way, BED becomes YBA, HAG becomes EXD and so on. ROT 13  or 'rotate by 13' is a well known variation on the caesar cipher. Pretty easy to write a decoder for this in python too.[make decoder known]'[or]You ask again about the Caesar cipher. [paragraph break]'Turn your letters into numbers, add or subtract to them and then turn them back to text. Nothing more to it than that really.' he says with a shrug.[stopping]";
 	show topic suggestions implicitly;
 
-Response of Ben O'Steen when asked about ROT code:
+Response of Ben O'Steen when asked about decoder:
 	if Ben O'Steen is hungry:
 		say "Ben's stomach rumbles loudly. He says 'Sorry, I'm starving. Let me finished this code so I can get some food from the Basecamp.";
 	otherwise:
@@ -749,22 +759,32 @@ The Lanyard is an unfamiliar thing.
 
 Understand "Lanyard/Dev8D Lanyard/badge" as Lanyard.
 
+After wearing the Lanyard:
+	say "Snazzy."
+
 The ask-suggestions of the helpful woman are { Lanyard }.
 
 Greeting response for the helpful woman:
-	say "You say 'Hi'. [paragraph break] Hello! [if the player does not carry the Dev8D Lanyard] What is it you need? [otherwise] How are you enjoying the event so far?"
+	say "You greet the woman behind the registration desk.[paragraph break]'Hello! [if the player does not carry the Dev8D Lanyard]What is it you need?' she asks while sorting various items on the desk. [otherwise]How are you enjoying the event so far?' she asks[one of] with a smile[or][stopping]."
 
 Default response for the helpful woman during Event Starts:
-	say "'Erm, I'm not sure I follow you?";
+	say "She looks a little puzzled. 'Erm, I'm not quite sure I understand what you are asking. Have you tried asking someone in the Basecamp about it?' she replies.";
 	show topic suggestions implicitly;
 
 Default response for the helpful woman during Getting Ready:
 	say "She looks up briefly from her lists and says 'They are about to start in the basecamp, you'd better get there soon! Don't worry, they'll be plenty of time to register afterwards.'".
 	
 Response of the helpful woman when asked about Lanyard during Event Starts:
-	if the player does not carry the Dev8D lanyard:
-		say "She runs her finger along the badges, looking for yours. 'Ah, here we go! Now, the doors to all the main rooms are south along this corridor. If you have any other questions, just ask!'";
+	if the Dev8D lanyard is not handled:
+		say "She runs her finger along the badges, looking for yours.[paragraph break]'Ah, here we go!' she exclaims. 'This is your name, isn't it?' She holds the lanyard up for you to see. You nod and she hands it over to you. 'A lot of the event rooms are on this floor - rooms 3A to 3E run from west to east along this corridor. The Venue is on the 1st floor, through the Gallery bar and I know that you've already found the Basecamp. Enjoy the event![paragraph break]You say goodbye and turn to leave but she stops you. 'Sorry, forgot to tell you something. We're just waiting on some more [make WiFi known][add Wifi ask suggestion][wifi] codes to be printed up, in case you wonder why you don't have one! It will come in time'[paragraph break]You try to remain calm, forcing yourself not to panic. You note with some horror that your phone can barely pick up Edge inside the building. Edge! A pair of paper cups and some string provides better connectivity than that!";
 		now the player carries the Dev8D lanyard;
 	otherwise:
-		say "I've already registered you and given your lanyard to you... you haven't lost it already, have you?"
-						
+		if the player is wearing the Lanyard:
+			say "She looks at the your lanyard. 'It suits you!'";
+		otherwise if the player is not holding the lanyard:
+			say "I've already registered you and given your lanyard to you... you haven't lost it already, have you?";
+		otherwise:
+			say "She nods towards the lanyard in your hand. 'That's it. Was there something else?'" 
+
+Response of the helpful woman when asked about WiFi during Event Starts:
+	say "You ask her about the Wifi code.[paragraph break][one of]She begins to explain how you just need to wait a little longer but stops when she notices something about the way you are standing. It may have been something to do with the way you kept your phone clutched in your hand, repeatedly raising it to check for a 3G signal and lowering it, doing curls with your arm like some tech-obsessed body builder. [paragraph break]'Well, If you are in a [italic type]real[roman type] hurry to get online, you could talk to Dave Tarrant and see if he is willing to do you a favour. He's downstairs in the Venue setting up a few things. Just don't tell him I sent you!'[or]'Did you ask Dave about the [WiFi]?'[stopping]".
