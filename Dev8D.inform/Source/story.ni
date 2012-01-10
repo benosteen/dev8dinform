@@ -7,9 +7,9 @@ Include Exit Descriptions by Matthew Fletcher.
 
 The release number is 1. The story creation year is 2012. The story headline is "A day at Dev8D". The story genre is "Serious Game". The story description is "A mock-up of what the beginning of the Dev8D event might be like."
 
-Part 1 - Groundwork
+Book 1 - Groundwork
 
-Chapter 1 - Help
+Part 1 - Help
 
 Understand "help" as Boilerplatehelp.
 
@@ -21,7 +21,7 @@ Report Boilerplatehelp:
 To Print Basic Help:
 	say "For those new to text adventures - Don't Panic! It's quite simple, once you get comfortable and learn that the flashing cursor is your friend.[paragraph break]All the action takes place in rooms. You can move from one room to another with a simple command like [fixed letter spacing]Go north[variable letter spacing] or even just [fixed letter spacing]n[variable letter spacing]. The game doesn't really care about the case of commands, so don't worry about that either. Many help pages online will use CAPITAL LETTERS to show things you type in, but it doesn't affect anything to use lower or even mixed-case.[paragraph break]Moving within a room isn't necessary - you don't need to approach a buffet table to take something from it - the game handles that sort of thing for you. Stick to short english commands and if you can see it, you can interact with it.[paragraph break]Compass directions are used to move around but the exits from a room are listed in this game, so you shouldn't have to make any maps. In fact, as this is based on the ULU venue itself, you might find decent maps of the place online![paragraph break]Try to interact with your surroundings, for example:[line break][fixed letter spacing]> EXAMINE TABLE[line break]> ASK BEN ABOUT PROGRAMMING LANGUAGES[line break]> DRINK COFFEE[line break]> READ FLYER[line break][variable letter spacing] and of course[fixed letter spacing][line break]> GET LAMP[variable letter spacing][paragraph break]Other words to try:[fixed letter spacing][line break]PICK UP, PUT, DROP {something}, GET {something}, TAKE{something}[line break]LOOK or EXAMINE {something}[line break]INVENTORY[line break]WAIT or Z[paragraph break][variable letter spacing]Many commands have abbreviated forms. You can use 'X' instead of 'EXAMINE', 'I' instead of 'INVENTORY', and the short-forms of the compass directions ('s','se', etc) to 'GO' in that direction.[paragraph break]"
 
-Chapter 2 - Misc simple actions and overrides
+Part 2 - Misc simple actions and overrides
 
 [point tracker]
 A thing can be used or unused. A thing is usually used.
@@ -43,7 +43,7 @@ casting xyzzy is an action applying to nothing.
 Report casting xyzzy:
 	say "You close your eyes and gather your thoughts. You enunciate each syllable of the incantation well, only struggling to pronounce the second z clearly. [paragraph break]You open your eyes, finding yourself to be exactly where you where. It is clear, however, that there are fewer people around you. You hear the slam of doors in the distance." 
 
-Chapter 3 - Noise/audio and smell
+Part 3 - Noise/audio and smell
 
 A thing has some text called sound. The sound of a thing is usually "silence".
 
@@ -65,6 +65,10 @@ Instead of listening to a room:
 	if an audible thing can be touched by the player, say "You hear some sounds in this room, but you can't make out what is causing it."; 
 	otherwise say "Nothing of note."
 
+Instead of smelling a room:
+	if a not odourless thing can be touched by the player:
+		say "[one of]You inhale deeply. You can make out a few scents coming from the direction of the [or]You concentrate on the smell of the room. You smell something that you think might be from the [at random][the list of not odourless things which can be touched by the player]."
+
 Definition: a thing is audible if the sound of it is not "silence".
 
 Definition: a thing is odourless if the smell of it is "nothing".
@@ -72,7 +76,7 @@ Definition: a thing is odourless if the smell of it is "nothing".
 Before printing the name of something audible while listening to a room: 
 	say "[sound] from the "
 
-Chapter 4 - Hacker person setup
+Part 4 - Hacker person setup
 
 A hacker is a kind of person.
 
@@ -113,7 +117,7 @@ Default response for a hacker:
 	say "'Er... what?";
 	show topic suggestions implicitly;
 
-Chapter 5 - Conversation topics
+Part 5 - Conversation topics
 
 Python is a unfamiliar thing. It is unused.
 
@@ -124,14 +128,12 @@ Advanced crypto is a familiar thing.
 ROT code is an unfamiliar thing.
 Rickroll and piano cat are unfamiliar things.
 
-Understand "crypto/cryptography/code-breaking/cipher/frequency analysis/code breaking/breaking code" as Cryptography.
-
 Ruby is a unfamiliar thing.
 Redis is a unfamiliar thing.
 Git is a unfamiliar thing.
 JQuery is a unfamiliar thing.
 Javascript is a unfamiliar thing.
-Lightning talk on cryptography is an unfamiliar thing.
+Lightning talk on Codebreaking is an unfamiliar thing.
 WiFi is a familiar thing.
 ARDrone is familiar.
 
@@ -141,7 +143,7 @@ Understand "3D printing" or "3D printers" as 3D_printing. The printed name of 3D
 Programming languages is a familiar thing.
 Understand "programming languages/language/languages/coding" as Programming languages.
 
-Chapter 6 - Under and hiding
+Part 6 - Under and hiding
 
 Underlying relates various things to one thing. The verb to underlie (he underlies, they underlie, he underlaid, it is underlaid, he is underlying) implies the underlying relation. The verb to be under implies the underlying relation. The verb to be beneath implies the underlying relation.
 
@@ -162,9 +164,9 @@ Carry out hiding it under:
 Report hiding it under:
 	say "You shove [the noun] out of sight beneath [the second noun]."
 
-Part 2 - Game Setting
+Book 2 - Game Setting
 
-Chapter 1 - Scenes and scene logic
+Part 1 - Scenes and scene logic
 
 When play begins:
 	say "Despite Tfl's best efforts, you've made it to Russell square tube station only slightly behind schedule. You're a short walk away from the Developer Happiness Days event, aka Dev8D. It's taking place in the University of London Union (ULU) building and, if it is anything like it was last year, it will not only be great fun, but you'll meet plenty of new people, be introduced to new and exciting software and even learn a few fresh tricks about dealing with the software you are already using.[paragraph break]You walk out from Russell Square station and load up the directions to the ULU entrance. You walk along for a few minutes, staring down, tracking your progress with your phone. It isn't long before you approach the front door and have to pass by the throng of [smoking students] to walk inside.";
@@ -222,7 +224,7 @@ event
 "If you haven't yet registered and picked up your Dev8D lanyard[make lanyard familiar], please do so as soon as you can - it has your name on it!"
 
 
-Chapter 2 - Random things (Food, etc)
+Part 2 - Random things (Food, etc)
 
 A Food is a kind of thing. Foods are edible and portable.
 A drink is a kind of food.
@@ -234,6 +236,9 @@ Instead of eating a drink (called thisdrink):
 Instead of drinking a drink (called thisdrink):
 	say "You take a long slurp of [thisdrink]. [one of]Lovely, lovely [thisdrink]. Perfect. [or]Still hot too! [or]You savour the [thisdrink], drinking it slowly. [or]Ah... just what you needed. [at random][first time]It's a shame the cups are so small![only]";
 	move thisdrink to the refreshments table.
+
+Instead of pushing or pulling a drink (called thisdrink):
+	say "[one of]All that will create is a puddle[if thisdrink is supported by something] on the table[end if]. And do you know what a room full of developers who have sensitive, expensive electronics don't want?[paragraph break]That's right. That[or]No[stopping]."
 
 A Muffin is a kind of food.
 
@@ -250,7 +255,7 @@ The smell of coffee is "[one of]It smells like coffee. No surprise there[or]Even
 
 The smell of tea is "[one of]Nothing relaxes you more than the smell of a good cup of tea[or]Strong, sweet tea. Unmistakeable[at random]"
 
-Chapter 3 - Regions
+Part 3 - Regions
 
 Zone of Corridors is a region. Corridor - East, Corridor - Middle, Corridor - West, and Corridor - Westmost are in Zone of Corridors.
 
@@ -260,25 +265,29 @@ Event Area is a region. Work Rooms is a region.
 
 The Venue, 3A, 3B, 3C, 3D, and 3E are rooms in Work rooms. Basecamp and Work rooms are in Event Area. 
 
-Chapter 4 - Stairwell and entrance rooms
+Part 4 - Stairwell and entrance rooms
 
-Section 1 - ULU Entrance
+Chapter 1 - ULU Entrance
 
 The player is in ULU Entrance. [Start game here]
 
 ULU Entrance is a room. "[if unvisited]You look around the foyer, scanning across the faces of the various students sat, engrossed in their laptops. You notice a small A4 [sign for Dev8D] on the north wall. To the west is a [snack shop], selling all sorts of sweets, sandwiches and hot drinks. At least, it would be if it were open. There is a [small lift] to the north, but that is being used to take [boxes of drinks] upstairs. A lot of drinks.[otherwise]The shop is still closed it seems and the Sisyphean challenge of keeping the bar stocked with booze and J20 is still ongoing. Students are quietly working and chatting in the seated area.[end if]" 
 
-[table props]
+Section 1 - Table props
 
-The dusty table is in the ULU entrance. The old lamp, the plastic arrow, the red fish, and the shiny red keycard are on the dusty table. 
+The dusty table is in the ULU entrance. The old lamp, the plastic arrow, the red fish, and the shiny red keycard are on the dusty table.
 
-The description of the dusty table is "You see an unmanned trestle table sagging with the weight of a huge pile of flyers. Someone has attempted to make the table and everything on it look old and dusty, but with the handicap of using only [glitter], [tinsel] and [coloured paper].[paragraph break][if the old lamp is on the dusty table]Nestled amongst the flyers, is an [old lamp]. Unlike most of the other items on the table, the lamp looks old simply because it is. [end if][if the plastic arrow is on the dusty table]For some reason, a slightly warped [plastic arrow] is also on the table, positioned as if it is important. There is a [red fish] almost buried in glitter next to it on the table. Why someone would use so much glitter isn't obvious, unless they are doing it as a (thinly-veiled) cry for help. A [shiny red keycard] pokes out from underneath the fish. You note that it has somehow remained glitter-free.[paragraph break]"
+Understand "card" as shiny red keycard.
+
+The description of the dusty table is "You see an unmanned trestle table sagging with the weight of a huge pile - no, a mountain - of flyers, the lower reaches of which are decorated with [toy figures]. Someone has attempted to make the table and everything on it look old and dusty, but with the handicap of using only [glitter], [tinsel] and [coloured paper].[paragraph break][if the old lamp is on the dusty table]An [old lamp] sits nestled within a valley of paper. Unlike most of the other items on the table, the lamp looks old simply because it is. [end if][if the plastic arrow is on the dusty table]For some reason, a slightly warped [plastic arrow] is also on the table, positioned as if it is important. There is a [red fish] almost buried in glitter next to it on the table. Why someone would use so much glitter isn't obvious, unless they are doing it as a (thinly-veiled) cry for help. A [shiny red keycard] pokes out from underneath the fish. You note that it has somehow remained glitter-free.[paragraph break]"
 
 The old lamp is unused.
 
 The description of the old lamp is "[one of]It looks like an old Davy lamp, covered with joke-shop cobwebs and glitter. You can't see much past the schmutz at first glance.[or]It looks like it hasn't been lit in very long time. You notice a small plaque around the bottom edge of the lamp[or]You are able to rub some debris from the plaque, revealing this message: 'For use when confronted by a maze of twisty little passages, all alike. (C) 1976'.[or]'For use when confronted by a maze of twisty little passages, all alike. (C) 1976'.[paragraph break](You young whipper-snappers probably have no idea what this means, do you?! Young people, *sigh*)[stopping]"
 
 The description of the plastic arrow is "[one of]A toy arrow that might be made out of a spongy plastic foam, like that used to cover bats to make them 'safe'. It's a dismal grey in colour, with a few dark squiggles along one side.[or]You look at the dark squiggles more closely. You discover that if you angle yourself just so that you can make out the faded words that run along one side of the arrow: [paragraph break][bold type]Guaranteed to kill 99.9% of grues![line break][italic type](Note: Dye used in this recreational toy is toxic. Not safe for children under 3 years of age. Does not kill grues. Use at own risk.)'[roman type][stopping]."
+
+Section 2 - Prop actions (take/smell/etc)
 
 Instead of doing something other than examining the arrow:
 	say "Ew. The plastic is tacky and looks like it is decomposing from age. You'd rather not do that at all."
@@ -317,6 +326,8 @@ Instead of rubbing the old lamp:
 	otherwise:
 		say "[one of]Rub me once, get a point for free. Rub me twice, no more points for you. Greedy.[or]Look, there's no genie here so quit it.[or]Go on, keep rubbing. See if I care.[stopping]"
 
+Section 3 - Lamp's bodyguard
+
 Every turn when the player holds the old lamp:
 	If old lamp is held for at least five turns:
 		say "[one of]'Hey!' An angry man shouts out at you. 'That's my lamp! What the hell do you think you are playing at? Give it here!' He snatches the [old lamp] from you, and looks like he is about to erupt. Eventually, he gets himself under control and just shakes his head in frustration at you and stalks off, the lamp swinging beside him.[or]You are tapped on the shoulder twice, with some force behind each tap. [paragraph break]You turn round to see the angry man from before 'You again?' he says 'That lamp is an heirloom, it's not worth anything to anyone but me, so leave off!' He grabs the lamp and walks off[or]You are slammed to the floor by something big. You roll over but see nothing.[stopping]";
@@ -325,7 +336,7 @@ Every turn when the player holds the old lamp:
 Rule for writing a paragraph about the dusty table:
 	say "[a description of the dusty table]".
 
-[under the table]
+Section 4 - Under the table
 
 The hidden-under-the-table notice underlies the dusty table. The description of it is "'The Desk of Obligatory Tropes'[line break]	by Roy G. Biv.[if hidden-under-the-table notice is unused][paragraph break](Ah, go on. Have a point.)"
 
@@ -335,9 +346,9 @@ After examining the hidden-under-the-table notice when the hidden-under-the-tabl
 	award 1 point;
 	now the hidden-under-the-table notice is used.
 
-[dusty table scenery]
+Section 5 - Dusty table scenery
 
-Smoking students, small lift, laptop students, sign for Dev8D, boxes of drinks, snack shop, glitter, joke cobwebs, tinsel and coloured paper are scenery in ULU Entrance.
+Smoking students, small lift, laptop students, sign for Dev8D, boxes of drinks, snack shop, toy figures, glitter, joke cobwebs, tinsel and coloured paper are scenery in ULU Entrance.
 
 The description of the sign for Dev8D is "The sign poster has the familiar orange logo for Dev8D on it, complete with smilie, and an arrow pointing up. Simple and to the point."
 
@@ -361,6 +372,10 @@ The description of tinsel is "An unpleasant and cheap-looking survivor of many p
 
 The description of coloured paper is "It's amazing what an artist can capture with just some scissors, glue and coloured paper. The person who decorated this table was no artist. They may not have even been sober."
 
+The description of the toy figures is "On closer inspection, you see that these are adult figurines, not toys: the key and only difference being that the first one costs ten times as much as the second. You scan across the figur[italic type]ines[roman type]: a smiling green orc 'holding' a pig, a few strange dioramas, one of a blue sword leaning against a US-style mailbox and another consisting of a towel, a cup of tea and a small, yellow, leech-like fish. Some of them ever look home-made - that pig is glued crudely to the side of the orc, who has crudely been given a forced smile with some white paint. The pile of flyers are bookended by two, more expensively made figures: a blond, wimpy-looking pirate standing meekly, and a large, cartoonish purple tentacle (looking more akin to a traffic cone than a real tentacle), with arm flaps on its side and three circular suckers on its 'front'. Someone had too much time on their hands setting this all up, that much is obvious." 
+
+Section 6 - Game flyers
+
 The retro-game flyer pile is a fixed in place thing on the dusty table. The description of the retro-game flyer pile is "A stack of small pamphlets about the history of what it calls 'Interactive Fiction' games. Less point-and-click and more guess-the-verb in your opinion."
 
 A poorly printed flyer is in flyer limbo. The description of the poorly printed flyer is "[one of]The title of the flyer is '[bold type]GET LAMP[roman type] - Interactive fiction in the 21st century!'. Further down the page you see an apology for stealing the flyer's title from 'Jason's (@textfiles) awesome upcoming documentary, can't wait!!!'. Hmm.[or](An uninspiring photo of a smartphone running some sort of terminal application.) You guess this must be interesting for some reason you cannot fathom as the caption text under it uses a lot of exclamation marks.[or]'Our Favourite Interactive Fiction games! (Check them out on IFDB) [paragraph break] - Blue Lacuna by Aaron A. Reed (Phenomenal!!)[line break] - Any and all of the Zork games[line break] - Vicious Cycles (http://bloomengine.com/cycles)[line break] - Photopia by Adam Cadre (strange and beautiful!)[line break] - Galatea by Emily Short[line break] - Ecdysis by Peter Nepstad (Very Non-PG Lovecraftian horror!)[line break] - Lost Pig by Admiral Jota (Grunk catch pig!)[line break] - Bronze by Emily Short (Emily again)[line break] - Collosal Cave Adventure (a classic!!)[line break] (... the list goes on for most of a page, with names like Emily Short, Adam Cadre, Andrew Plotkin and Aaron Reed reoccurring a few times.) [or]You read a passage about how graphical interfaces destroy the imagination in children and adults. You stifle a laugh, knowing that whoever wrote this likely made it using MS Word. Mainly because of the overuse of Papyrus, Comic-sans and *scoff* Ariel.[line break] (However, the fact that you can recognise Ariel at all when it is printed small and on a cheap flyer gives you some pause for thought.)[cycling]"
@@ -376,12 +391,14 @@ Instead of taking the retro-game flyer pile:
 	otherwise:
 		say "You shouldn't take more than one, no matter how many there are here. These have obviously been printed on a student's budget!"
 
+Section 7 - Table tests
+
 test table with "look/x table/x glitter/ x coloured paper/x tinsel/x retro-game flyers/take flyer/x flyer/x flyer/x flyer/x flyer/x students/x keycard/take keycard/take keycard"
 
 test lamp with "x lamp/x lamp/x lamp/x lamp/take lamp/rub lamp/rub lamp/rub lamp"
 
 [Stairwell rooms]
-Section 2 - Ground floor stairs
+Chapter 2 - Ground floor stairs
 
 To say generic stairwell desc:
 	say "[one of]In the low-light of the stairwell, you see a set of sharp-angled stairs spiralling upwards, fenced in by a utilitarian handrail, supported by thin banisters. The parts of the walls you can see are the kind of beige colour that cannot be described accurately without the words 'institutional' and 'depressing'. It won't be how the colour is officially labelled, but labels are rarely honest[or]A spiralling staircase, hemmed in by harsh railings and beige walls[stopping]. The noise from the rest of the building provides a background hum of activity"
@@ -426,23 +443,23 @@ Instead of taking or pulling the master sword paper strip in Ground floor stairs
 
 test 1Fstairs with "x board/x message board/x strip/x miscellaneous posters/x poster/x zelda poster/x strip/take strip/x stairwell/listen to stairwell/take strip/drop strip/take strip".
 
-Section 3 - First floor stairs
+Chapter 2 - First floor stairs
 
 First floor stairs is above Ground floor stairs. "[generic stairwell desc].[paragraph break]You see that the Gallery bar is north through the double doors[if unvisited], but now is no time to take a drink[end if]. You can go down to the ground floor or up a few flights to the third floor[if unvisited], which is where most of Dev8D will take place[end if]."
 
-Section 4 - Third floor stairs
+Chapter 3 - Third floor stairs
 
 Third floor stairs is above First floor stairs. "[generic stairwell desc]."
 
 [1F rooms - Gallery room, The Venue and the Duck and Dive restaurant.]
 
-Chapter 5 - 1F rooms
+Part 5 - 1F rooms
 
-Section 1 - Gallery bar
+Chapter 1 - Gallery bar
 
 The Gallery is north of First floor stairs. "GALLERY DESCRIPTION."
 
-Section 2 - The Venue
+Chapter 2 - The Venue
 
 The Venue is west of the Gallery. "VENUE DESCRIPTION."
 
@@ -452,15 +469,15 @@ Dave Tarrant is a male hacker in The Venue. Dave Tarrant is hacking.
 
 Understand "Dave/David" as Dave Tarrant.
 
-Section 3 - The Duck and Dive Bar
+Chapter 3 - The Duck and Dive Bar
 
 The Duck & Dive Bar is south of First floor stairs. "Duck and Dive bar description."
 
 [3F rooms]
 
-Chapter 6 - 3F rooms
+Part 6 - 3F rooms
 
-Section 1 - Corridor and registration desk
+Chapter 1 - Corridor and registration desk
 
 The Corridor - Middle is south of Third floor stairs. "REGISTRATION DESK CORRIDOR."
 
@@ -470,7 +487,7 @@ The Corridor - East is east of the Corridor - Middle. "corridor east."
 The Corridor - West is west of the Corridor - Middle. "corridor west."
 The Corridor - Westmost is west of the Corridor - West. "BASECAMP CORRIDOR."
 
-Section 2 - Event room - corridors and generic setup
+Chapter 2 - Event room - corridors and generic setup
 
 The description of a room is usually "ROOM GENERIC DESCRIPTION."
 
@@ -483,21 +500,25 @@ The description of a room is usually "ROOM GENERIC DESCRIPTION."
 
 3E is south of Corridor - West.
 
-Section 3 - Room Generics (backdrops, etc)
+Chapter 3 - Room Generics (backdrops, etc)
+
+Section 1 - Random developer backdrop
 
 The developers are a backdrop. The developers are in Event Area.
 
+Understand "table of developers" as developers.
+
 The description of the developers is "[one of]You see two people sat in front of a single laptop. One of them is typing on it while listening to the other, who is advising him on what to do. You overhear small snatches of their conversation, enough to understand that the one typing is getting hints on how to plug some security holes in his Apache setup[or]A loud buzzing sound breaks the quiet and is quickly followed up by laughter and cheering. You turn to see that a small crowd of people are huddled around an arduino board, which has been connected up to some sort of contraption. You overhear one of the crowd saying 'Quick, tweet it again!'. You turn back to what you are doing as the buzzer goes off for the second time[or]On one table, you see someone chatting to a small group of others, gesticulating towards a large diagram they've stuck to the wall. From what you can make out, she is explaining how she has been using message queueing in her services[or]Someone waves at you. At least, you thought they were waving at you. You take a better look and spot the Kinect camera sitting in front of them. All that hand-waving has a purpose, it seems[or]You peer over the shoulder of a particularly busy developer and catch a glimpse of a some sort of data visualisation she's been working on. You make a note to talk to her about it later on[or]You catch sight of a couple of developers having a heated, but friendly argument. The discussion goes back and forth for a little while, until someone interrupts them and says 'Oh god, not this flame war again.' They pause briefly until one of them starts the argument rolling again with an obviously inflammatory 'But it's so much nicer to use!' comment[in random order]."
 
-Section 4 - Room 3A
+Chapter 4 - Room 3A
 
 The description of 3A is "3A DESCRIPTION."
 
-Section 5 - Room 3B
+Chapter 5 - Room 3B
 
 The description of 3B is "3B DESCRIPTION."
 
-Section 6 - Room 3C
+Chapter 6 - Room 3C
 
 The description of 3C is "3C DESCRIPTION."
 
@@ -505,7 +526,7 @@ Graham Klyne is a male hacker in 3C. Graham Klyne is hacking.
 
 Understand "Graham" as Graham Klyne.
 
-Section 7 - Room 3D
+Chapter 7 - Room 3D
 
 The description of 3D is "3D DESCRIPTION."
 
@@ -519,13 +540,13 @@ The description of Ben O'Steen is "[first time]Sat in front of a creaking, strai
 
 Understand "Ben" as Ben O'Steen.
 
-Section 8 - Room 3E
+Chapter 8 - Room 3E
 
 The description of 3E is "3E DESCRIPTION."
 
-Chapter 7 - Basecamp
+Part 7 - Basecamp
 
-Section 1 - Basecamp description
+Chapter 1 - Basecamp description
 
 Basecamp is north of the Corridor - Westmost. "[if not unvisited]Normal BASECAMP DESC[otherwise]You enter the door and come face-to-face (well, face-to-back) with a [crowd of people], all of whom are looking intently towards the other side of the room[end if]."
 
@@ -537,7 +558,9 @@ The description of the Basecamp schedule board is "BASECAMP SCHEDULE DESC."
 
 There is a refreshments table in the Basecamp. There is tea and coffee on the refreshments table.
 
-Section 2 - Muffins, food and drink
+Chapter 2 - Muffins, food and drink
+
+Section 1 - Buffet setup
 
 The snack buffet is a fixed in place thing on the refreshments table. Understand "muffin/snack" as the snack buffet. The description is "A selection of different types of snacks piled high - mainly muffins. It looks like a muffin re-enactment of the Ambassador's Ferraro Rocher pyramid[if the strange code fragment is on the table]. There is a strange code fragment on the table[end if]."
 
@@ -554,6 +577,8 @@ Rule for writing a paragraph about the snack buffet:
 	say "On [the refreshments table] is tea, coffee and [a snack buffet]. [description of the snack buffet][if the strange code fragment is on the table]. There is a strange code fragment here also[end if].[line break]".
 		
 A blueberry muffin, A chocolate muffin, a plain muffin, and a lemon muffin are in Muffin Limbo.
+
+Section 2 - Muffin logic
 
 Instead of taking the snack buffet:
 	let chosen number be a random number between 1 and 4;
@@ -625,7 +650,9 @@ Rule for clarifying the parser's choice of the snack buffet while taking:
 After eating a muffin:
 	move the noun to muffin Limbo;
 	continue the action.
-	
+
+Section 3 - Strange code fragment
+
 A strange code fragment is on the refreshments table.  The description of the strange code fragment is "[first time]A piece of paper, torn off from a larger piece. It is covered in lots of lower-case letters, arranged mostly as a block of characters with a fixed spacing between characters reminiscent of a computer terminal. It reminds you of the sort of paper receipts are printed on. There is an odd mark on the back of the paper which looks a little like a snake.[line break][only]----------------------------[paragraph break][fixed letter spacing]zqkszwtt[paragraph break]vmdmzowvvioqdmgwccxv[line break]mdmzowvvitmbgwclwevv[line break]mdmzowvvizcvizwcvliv[line break]llmamzbgwcvmdmzowvvi[line break]uismgwckzgvmdmzowvvi[line break]aigowwljgmvmdmzowvvi[line break]bmttitqmivlpczbgwc[variable letter spacing][paragraph break]----------------------------[first time][paragraph break]Odd.[only]"
 
 The strange code fragment is unused.
@@ -633,16 +660,16 @@ The strange code fragment is unused.
 After taking the strange code fragment:
 	say "You take the paper, but at a glance you can tell that it is encrypted - you can't tell if it will contain important information or a recipe for good Caesar salad. Well...  it's probably worth decoding then. Good recipes are hard to come by.[make Codebreaking known]".
 
-Part 3 - People and conversations
+Book 3 - People and conversations
 
-Chapter 1 - Graham Klyne
+Part 1 - Graham Klyne
 
 The ask-suggestions of Graham Klyne are { 3D_printing }.
 
 Response of Graham Klyne when asked about 3D_printing:
 	say "Placeholder."
 
-Chapter 2 - Dave Tarrant
+Part 2 - Dave Tarrant
 
 Every turn when the player is in the Venue:
 	say "The ARDrone swoops past your head."
@@ -656,7 +683,7 @@ Response of Dave Tarrant when asked about WiFi:
 	say "Placeholder."
 	
 
-Chapter 4 - Ben O'Steen
+Part 3 - Ben O'Steen
 
 Instead of giving a food (called thisfood) to Ben O'Steen:
 	if thisfood is the plain muffin:
@@ -700,7 +727,7 @@ Response of Ben O'Steen when asked about Codebreaking:
 	show topic suggestions implicitly;
 
 Response of Ben O'Steen when asked about advanced crypto:
-	say "[one of]'Advanced cryptography sounds fun. How about that?' you ask.[paragraph break]'[if python is used]You remember when I told you to google python? Yeah, well, there is a huge amount to modern cryptography and it's hard to explain without some preparation. [end if]I could ask around for you to see if there is someone willing to do a [lightning talk on cryptography], I'm sure there'd be interest in something like that. You could ask around too, you know. There's plenty of flexibility in the schedule later on as we purposefully left space for this sort of thing.[make lightning talk on cryptography known][or]'[first time]Would you run a session on advanced cryptography or ciph...'[paragraph break]He cuts in before you can finish. 'Sorry, not today, I've already got most of the day booked up. Besides, I'm sure there are a lot of other people who are far more qualified. [only]I hope you can find someone to talk to about it.'[stopping]"
+	say "[one of]'Advanced cryptography sounds fun. How about that?' you ask.[paragraph break]'[if python is used]You remember when I told you to google python? Yeah, well, there is a huge amount to modern cryptography and it's hard to explain without some preparation. [end if]I could ask around for you to see if there is someone willing to do a [lightning talk on Codebreaking], I'm sure there'd be interest in something like that. You could ask around too, you know. There's plenty of flexibility in the schedule later on as we purposefully left space for this sort of thing.[make lightning talk on Codebreaking known][or]'[first time]Would you run a session on advanced cryptography or ciph...'[paragraph break]He cuts in before you can finish. 'Sorry, not today, I've already got most of the day booked up. Besides, I'm sure there are a lot of other people who are far more qualified. [only]I hope you can find someone to talk to about it.'[stopping]"
 
 Response of Ben O'Steen when asked about caesar cipher:
 	say "[one of]'What about the Caesar cipher? How does that work?' you ask. [paragraph break]'It's a very simple code. Here, let me show you.' he says, turning the laptop towards you. 'Imagine the alphabet you want to use written out twice, one row above another. For example:' [paragraph break](on screen)[line break][fixed letter spacing]A B C D E F G H I...[line break]A B C D E F G H I...[variable letter spacing][paragraph break]By shifting the second row to the right or left by some number of letters, say, 3 letters to the right, you can create a caesar cipher encoder:[paragraph break][fixed letter spacing]A B C D E F G H I...[line break]X Y Z A B C D E F...[variable letter spacing][paragraph break]He points to the screen 'Note how the letters wrap around here. To encode a letter, you find it on the top row and use the letter under it. In this way, BED becomes YBA, HAG becomes EXD and so on. ROT 13  or 'rotate by 13' is a well known variation on the caesar cipher. Pretty easy to code this in python too.[make ROT code known]'[or]You ask again about the Caesar cipher. [paragraph break]'Turn your letters into numbers, add or subtract to them and then turn them back to text. Nothing more to it than that really.' he says with a shrug.[stopping]";
@@ -714,7 +741,7 @@ Response of Ben O'Steen when asked about ROT code:
 
 test ben_chat with "talk to Ben/a languages/a python".
 
-Chapter 5 - Registration Desk Woman
+Part 4 - Registration Desk Woman
 
 There is a helpful woman in the Corridor - Middle. The helpful woman is a woman. The helpful woman carries a thing called the Dev8D lanyard. The Dev8D lanyard is a wearable, portable thing. The description of the helpful woman is "Standing behind a desk covered with conference lanyards and badges is a smiling woman. You are deeply impressed that she is able to be so chipper this early in the morning. She is pouring over various lists and logistical diagrams in front of her. It's complex enough to be either a foolproof and detailed plan for world domination, or just the food preferences of the delegates."
 
@@ -741,7 +768,3 @@ Response of the helpful woman when asked about Lanyard during Event Starts:
 	otherwise:
 		say "I've already registered you and given your lanyard to you... you haven't lost it already, have you?"
 						
-Instead of pushing or pulling a drink (called thisdrink):
-	say "[one of]All that will create is a puddle[if thisdrink is supported by something] on the table[end if]. And do you know what a room full of developers who have sensitive, expensive electronics don't want?[paragraph break]That's right. That[or]No[stopping]."
-
-Understand "throw [tea]" or "throw [coffee]" or "throw [tea] at [someone]" or "throw [coffee] at [something]" as a mistake ("NO FOOD FIGHTS! Seriously now. Imagine if your laptop got hit by [the noun] and ruined?")
