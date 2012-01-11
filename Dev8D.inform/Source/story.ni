@@ -226,6 +226,8 @@ event
 
 Part 2 - Random things (Food, phone, etc)
 
+Chapter 1 - Phone
+
 The phone is a device. The phone is switched on. The player holds the phone.
 
 The phone can be in-signal or out-of-signal. The phone is out-of-signal.
@@ -235,6 +237,11 @@ Instead of examining phone:
 		say "[one of]You look down at your phone. No new emails, tweets, SMSs, IMs or pokes. No signal bars either, which would explain that.[or]No signal. No connectivity.[or]Nothing. No signal either.[then at random]";
 	otherwise:
 		say "[one of]You phone finally has a signal! Thousands of messages, tweets and pings pour into it, forcing you to declare attention bankruptcy and ignore the majority of them. If it's important, they'll ping you again, right? ...[or]No new messages that need your attention.[stopping]" 
+
+Instead of dropping the phone:
+	say "[one of]What are you? Mad? You'd no sooner lop off one of your arms than leave your phone out for someone to take. Your life is on that phone!.[or]Er, no.[or]Not happening, so stop it.[stopping]"
+
+Chapter 2 - Food
 
 A Food is a kind of thing. Foods are edible and portable.
 A drink is a kind of food.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x1e688e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>GNOME Inform 7</generator>
-  <activeNode nodeId="node-0x6378580"/>
+  <activeNode nodeId="node-0x1e688e0"/>
   <item nodeId="node-0x1e688e0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -11738,7 +11738,7 @@ Well, it did until it was pushed underneath that fish.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -11752,7 +11752,7 @@ Well, it did until it was pushed underneath that fish.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -11766,7 +11766,7 @@ Well, it did until it was pushed underneath that fish.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
@@ -11780,7 +11780,35 @@ Well, it did until it was pushed underneath that fish.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x63786e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x63786e0">
+    <command xml:space="preserve">drop phone</command>
+    <result xml:space="preserve">What are you? Mad? You&apos;d no sooner lop off one of your arms than leave your phone out for someone to take. Your life is on that phone!.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x6378840"/>
+    </children>
+  </item>
+  <item nodeId="node-0x6378840">
+    <command xml:space="preserve">drop phone</command>
+    <result xml:space="preserve">What are you? Mad? You&apos;d no sooner lop off one of your arms than leave your phone out for someone to take. Your life is on that phone!.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>
