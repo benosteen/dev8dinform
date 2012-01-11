@@ -169,7 +169,7 @@ Book 2 - Game Setting
 Part 1 - Scenes and scene logic
 
 When play begins:
-	say "Despite Tfl's best efforts, you've made it to Russell square tube station only slightly behind schedule. You're a short walk away from the Developer Happiness Days event, aka Dev8D. It's taking place in the University of London Union (ULU) building and, if it is anything like it was last year, it will not only be great fun, but you'll meet plenty of new people, be introduced to new and exciting software and even learn a few fresh tricks about dealing with the software you are already using.[paragraph break]You walk out from Russell Square station and load up the directions to the ULU entrance. You walk along for a few minutes, staring down, tracking your progress with your phone. It isn't long before you approach the front door and have to pass by the throng of [smoking students] to walk inside.";
+	say "Despite Tfl's best efforts, you've made it to Russell square tube station in one piece and only slightly behind schedule. You're a short walk away from the Developer Happiness Days event, aka Dev8D. It's taking place in the University of London Union (ULU) building and, if it is anything like it was last year, it will not only be great fun, but you'll meet plenty of new people, be introduced to new and exciting software and even learn a few fresh tricks about dealing with the software you are already using.[paragraph break]You walk out from Russell Square station and load up the directions to the ULU entrance. You walk along for a few minutes, staring down, tracking your progress with your phone. It isn't long before you approach the front door and have to pass by the throng of [smoking students] to walk inside.";
 	[some item setup]
 	remove the master sword paper strip from play;
 	remove the refreshments table from play;
@@ -224,7 +224,17 @@ event
 "If you haven't yet registered and picked up your Dev8D lanyard[make lanyard familiar], please do so as soon as you can - it has your name on it!"
 
 
-Part 2 - Random things (Food, etc)
+Part 2 - Random things (Food, phone, etc)
+
+The phone is a device. The phone is switched on. The player holds the phone.
+
+The phone can be in-signal or out-of-signal. The phone is out-of-signal.
+
+Instead of examining phone:
+	if the phone is out-of-signal:
+		say "[one of]You look down at your phone. No new emails, tweets, SMSs, IMs or pokes. No signal bars either, which would explain that.[or]No signal. No connectivity.[or]Nothing. No signal either.[then at random]";
+	otherwise:
+		say "[one of]You phone finally has a signal! Thousands of messages, tweets and pings pour into it, forcing you to declare attention bankruptcy and ignore the majority of them. If it's important, they'll ping you again, right? ...[or]No new messages that need your attention.[stopping]" 
 
 A Food is a kind of thing. Foods are edible and portable.
 A drink is a kind of food.
@@ -759,9 +769,12 @@ The Lanyard is an unfamiliar thing.
 
 Understand "Lanyard/Dev8D Lanyard/badge" as Lanyard.
 
-After wearing the Lanyard:
+After wearing the Lanyard for the first time:
 	say "Snazzy."
-
+	
+After wearing the Lanyard for the fifth time:
+	say "People are starting to look at you oddly. Perhaps you should just keep the lanyard on?"
+	
 The ask-suggestions of the helpful woman are { Lanyard }.
 
 Greeting response for the helpful woman:

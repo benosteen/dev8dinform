@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x1e688e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>GNOME Inform 7</generator>
-  <activeNode nodeId="node-0x1e688e0"/>
+  <activeNode nodeId="node-0x6378580"/>
   <item nodeId="node-0x1e688e0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
 
-Despite Tfl&apos;s best efforts, you&apos;ve made it to Russell square tube station only slightly behind schedule. You&apos;re a short walk away from the Developer Happiness Days event, aka Dev8D. It&apos;s taking place in the University of London Union (ULU) building and, if it is anything like it was last year, it will not only be great fun, but you&apos;ll meet plenty of new people, be introduced to new and exciting software and even learn a few fresh tricks about dealing with the software you are already using.
+Despite Tfl&apos;s best efforts, you&apos;ve made it to Russell square tube station in one piece and only slightly behind schedule. You&apos;re a short walk away from the Developer Happiness Days event, aka Dev8D. It&apos;s taking place in the University of London Union (ULU) building and, if it is anything like it was last year, it will not only be great fun, but you&apos;ll meet plenty of new people, be introduced to new and exciting software and even learn a few fresh tricks about dealing with the software you are already using.
 
 You walk out from Russell Square station and load up the directions to the ULU entrance. You walk along for a few minutes, staring down, tracking your progress with your phone. It isn&apos;t long before you approach the front door and have to pass by the throng of Smoking students to walk inside.
 
 Dev8D
 A day at Dev8D by Ben O&apos;Steen
-Release 1 / Serial number 120110 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 120111 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 ULU Entrance
 You look around the foyer, scanning across the faces of the various students sat, engrossed in their laptops. You notice a small A4 sign for Dev8D on the north wall. To the west is a snack shop, selling all sorts of sweets, sandwiches and hot drinks. At least, it would be if it were open. There is a small lift to the north, but that is being used to take boxes of drinks upstairs. A lot of drinks.
@@ -60,6 +60,7 @@ Exits: north.
       <child nodeId="node-0x365a9e0"/>
       <child nodeId="node-0x3318dc0"/>
       <child nodeId="node-0x325b720"/>
+      <child nodeId="node-0x6378420"/>
     </children>
   </item>
   <item nodeId="node-0x1e68a40">
@@ -11727,6 +11728,59 @@ Well, it did until it was pushed underneath that fish.
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x6378420">
+    <command xml:space="preserve">x phone</command>
+    <result xml:space="preserve">You look down at your phone. No new emails, tweets, SMSs, IMs or pokes. No signal bars either, which would explain that.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x63782c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x63782c0">
+    <command xml:space="preserve">x phone</command>
+    <result xml:space="preserve">No signal. No connectivity.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x6378160"/>
+    </children>
+  </item>
+  <item nodeId="node-0x6378160">
+    <command xml:space="preserve">x phone</command>
+    <result xml:space="preserve">Nothing. No signal either.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x6378580"/>
+    </children>
+  </item>
+  <item nodeId="node-0x6378580">
+    <command xml:space="preserve">x phone</command>
+    <result xml:space="preserve">No signal. No connectivity.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <annotation xml:space="preserve"></annotation>

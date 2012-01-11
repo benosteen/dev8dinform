@@ -75,279 +75,279 @@
     <key>10</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
         <key>Line</key><integer>227</integer>
-        <key>Title</key><string>Part 2 - Random things (Food, etc)</string>
+        <key>Title</key><string>Part 2 - Random things (Food, phone, etc)</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>258</integer>
+        <key>Line</key><integer>268</integer>
         <key>Title</key><string>Part 3 - Regions</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>268</integer>
+        <key>Line</key><integer>278</integer>
         <key>Title</key><string>Part 4 - Stairwell and entrance rooms</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>270</integer>
+        <key>Line</key><integer>280</integer>
         <key>Title</key><string>Chapter 1 - ULU Entrance</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>276</integer>
+        <key>Line</key><integer>286</integer>
         <key>Title</key><string>Section 1 - Table props</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>290</integer>
+        <key>Line</key><integer>300</integer>
         <key>Title</key><string>Section 2 - Prop actions (take/smell/etc)</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>329</integer>
+        <key>Line</key><integer>339</integer>
         <key>Title</key><string>Section 3 - Lamp's bodyguard</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>339</integer>
+        <key>Line</key><integer>349</integer>
         <key>Title</key><string>Section 4 - Under the table</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>349</integer>
+        <key>Line</key><integer>359</integer>
         <key>Title</key><string>Section 5 - Dusty table scenery</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>377</integer>
+        <key>Line</key><integer>387</integer>
         <key>Title</key><string>Section 6 - Game flyers</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>394</integer>
+        <key>Line</key><integer>404</integer>
         <key>Title</key><string>Section 7 - Table tests</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>401</integer>
+        <key>Line</key><integer>411</integer>
         <key>Title</key><string>Chapter 2 - Ground floor stairs</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>446</integer>
+        <key>Line</key><integer>456</integer>
         <key>Title</key><string>Chapter 2 - First floor stairs</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>450</integer>
+        <key>Line</key><integer>460</integer>
         <key>Title</key><string>Chapter 3 - Third floor stairs</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>456</integer>
+        <key>Line</key><integer>466</integer>
         <key>Title</key><string>Part 5 - 1F rooms</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>458</integer>
+        <key>Line</key><integer>468</integer>
         <key>Title</key><string>Chapter 1 - Gallery bar</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>462</integer>
+        <key>Line</key><integer>472</integer>
         <key>Title</key><string>Chapter 2 - The Venue</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>472</integer>
+        <key>Line</key><integer>482</integer>
         <key>Title</key><string>Chapter 3 - The Duck and Dive Bar</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>478</integer>
+        <key>Line</key><integer>488</integer>
         <key>Title</key><string>Part 6 - 3F rooms</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>480</integer>
+        <key>Line</key><integer>490</integer>
         <key>Title</key><string>Chapter 1 - Corridor and registration desk</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>30</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>490</integer>
+        <key>Line</key><integer>500</integer>
         <key>Title</key><string>Chapter 2 - Event room - corridors and generic setup</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>31</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>503</integer>
+        <key>Line</key><integer>513</integer>
         <key>Title</key><string>Chapter 3 - Room Generics (backdrops, etc)</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>32</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>505</integer>
+        <key>Line</key><integer>515</integer>
         <key>Title</key><string>Section 1 - Random developer backdrop</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>33</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>513</integer>
+        <key>Line</key><integer>523</integer>
         <key>Title</key><string>Section 2 - Empty chair backdrop</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>34</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>521</integer>
+        <key>Line</key><integer>531</integer>
         <key>Title</key><string>Chapter 4 - Room 3A</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>35</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>525</integer>
+        <key>Line</key><integer>535</integer>
         <key>Title</key><string>Chapter 5 - Room 3B</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>36</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>529</integer>
+        <key>Line</key><integer>539</integer>
         <key>Title</key><string>Chapter 6 - Room 3C</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>37</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>533</integer>
+        <key>Line</key><integer>543</integer>
         <key>Title</key><string>Chapter 7 - Room 3D</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>38</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>553</integer>
+        <key>Line</key><integer>563</integer>
         <key>Title</key><string>Chapter 8 - Room 3E</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>39</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>557</integer>
+        <key>Line</key><integer>567</integer>
         <key>Title</key><string>Part 7 - Basecamp</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>40</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>559</integer>
+        <key>Line</key><integer>569</integer>
         <key>Title</key><string>Chapter 1 - Basecamp description</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>41</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>571</integer>
+        <key>Line</key><integer>581</integer>
         <key>Title</key><string>Chapter 2 - Muffins, food and drink</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>42</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>573</integer>
+        <key>Line</key><integer>583</integer>
         <key>Title</key><string>Section 1 - Buffet setup</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>43</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>591</integer>
+        <key>Line</key><integer>601</integer>
         <key>Title</key><string>Section 2 - Muffin logic</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>44</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>664</integer>
+        <key>Line</key><integer>674</integer>
         <key>Title</key><string>Section 3 - Strange code fragment</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>4</integer>
     </dict>
     <key>45</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>673</integer>
+        <key>Line</key><integer>683</integer>
         <key>Title</key><string>Book 3 - People and conversations</string>
         <key>Level</key><integer>2</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>46</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>675</integer>
+        <key>Line</key><integer>685</integer>
         <key>Title</key><string>Part 1 - Graham Klyne</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>47</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>682</integer>
+        <key>Line</key><integer>692</integer>
         <key>Title</key><string>Part 2 - Dave Tarrant</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>48</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>696</integer>
+        <key>Line</key><integer>706</integer>
         <key>Title</key><string>Part 3 - Ben O'Steen</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>49</key><dict>
         <key>Filename</key><string>/home/ben/Inform7_dev8d/Dev8D.inform/Source/story.ni</string>
-        <key>Line</key><integer>754</integer>
+        <key>Line</key><integer>764</integer>
         <key>Title</key><string>Part 4 - Registration Desk Woman</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>2</integer>
