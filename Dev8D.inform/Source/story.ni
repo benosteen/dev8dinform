@@ -476,15 +476,20 @@ Chapter 1 - Gallery bar
 
 The Gallery is north of First floor stairs. "GALLERY DESCRIPTION."
 
-Chapter 2 - The Venue
+The small side table is in the Gallery. "A nondescript dining table."
 
-The Venue is west of the Gallery. "VENUE DESCRIPTION."
+The drone box is fixed in place on the small side table. "A cardboard box with an image of the quadrocopter on."
 
-The ARDrone is in The Venue. The description of the ARDrone is "A small helicopter, well, a quadrocopter given that it has four blades." 
+The ARDrone is fixed in place on the drone box. The description of the ARDrone is "[one of][make ARDrone known]A small remote controlled helicopter. Well, it's actually a quadrocopter, given that it has four blades.[or]A remote-controlled quadrocopter.[stopping]" 
 
-Dave Tarrant is a male hacker in The Venue. Dave Tarrant is hacking.
+Instead of taking the ARDrone:
+	say "I don't think you can get away with stealing that."
+
+Dave Tarrant is a male hacker in The Venue. Dave Tarrant is hacking. The description of Dave Tarrant is "You see a young-looking, dark-haired man typing [italic type]very[roman type] quickly on a laptop. A very shiny, very expensive looking remote-controller helicopter is besides him. The helicopter is an [ARDrone] apparently, according to the box it is sat on."
 
 Understand "Dave/David" as Dave Tarrant.
+
+The Gallery dining table is in the Gallery.
 
 Chapter 3 - The Duck and Dive Bar
 
@@ -496,14 +501,29 @@ Part 6 - 3F rooms
 
 Chapter 1 - Corridor and registration desk
 
-The Corridor - Middle is south of Third floor stairs. "REGISTRATION DESK CORRIDOR."
+The Corridor - Middle is south of Third floor stairs. "[one of]You turn left into a small open area alongside a beige-coloured corridor, the same disappointing shade as that used in the stairwell. There is a [busy woman] sat behind a cluttered desk. To the south you can see the doors to rooms 3C and 3D. [or]The corridor widens here and provides access to the stairwell The entrances to rooms 3D and 3C are along the southern wall.[stopping] The corridor continues east towards a set of closed doors, and west, towards what sounds like the rest of the conference."
 
-The registration desk is scenery in the Corridor - Middle. "Registration desk desc."
+The registration desk is scenery in the Corridor - Middle. "The registration desk is covered by lanyards and lists. [if the player held the lanyard]You are amazed that your lanyard could be found amongst all that. There must be some kind of logic to it after all!. [end if]You are glad that none of the lists of information are of any consequence to you as they are nearly indecipherable!"
 
-The Corridor - East is east of the Corridor - Middle. "corridor east."
-The Corridor - West is west of the Corridor - Middle. "corridor west."
-The Corridor - Westmost is west of the Corridor - West. "BASECAMP CORRIDOR."
+The conference lanyards is scenery in the Corridor - Middle. "A pile of alphabetically-sorted lanyards."
 
+The Corridor - East is east of the Corridor - Middle. "[one of]You follow the corridor along a little further, and reach some [eastern closed doors] that block your progress. The doors to 3A and 3B are along the southern wall here so you won't need to go further along anyway. You are acutely aware of the lack of natural light, as everything has gained a yellow tinge from the fluorescent lighting.[or] The corridor ends at a set of [eastern closed doors] with the entrances to 3A and 3B along the south wall. [stopping] The entrances to the male and female toilets are on the north wall."
+
+The eastern closed doors are scenery in Corridor - East. "[one of]You look through windows on the closed doors and see more corridor, but you feel that there is something odd here. Everything has a rough, jagged-looking edge, almost as if it were part of a low-resolution picture. Even the colours of everything behind the doors are crudely blocky and flat.[or]The doors themselves look blocky and flat.[stopping]"
+
+The printed name of the eastern closed doors is "closed doors".
+
+The Corridor - West is west of the Corridor - Middle. "[one of]You walk on, towards the noise. You can see that the corridor continues west, and goes around a corner.[or] The corridor runs from east to west, where it goes around a small corner.[stopping] The entrance to room 3E is to the south."
+The Corridor - Westmost is west of the Corridor - West. "This part of the corridor narrows slightly and snakes around a corner where it ends. The door to the north leads to the [Basecamp]."
+
+The Male toilets are northwest of Corridor - East.
+The Female toilets are northeast of Corridor - East.
+
+Toilet rooms is a region. The Male toilets and Female Toilets are in Toilet Rooms.
+
+Instead of going to Toilet Rooms:
+	say "[one of]As soon as your hand makes contact with the door, you realise you no longer feel the physical need to go. Well, at least you know where the toilets are for next time.[or]You don't actually need to go.[stopping]"
+	
 Chapter 2 - Event room - corridors and generic setup
 
 The description of a room is usually "ROOM GENERIC DESCRIPTION."
@@ -698,9 +718,6 @@ Response of Graham Klyne when asked about 3D_printing:
 
 Part 2 - Dave Tarrant
 
-Every turn when the player is in the Venue:
-	say "The ARDrone swoops past your head."
-
 The ask-suggestions of Dave Tarrant are { ARDrone, WiFi }.
 
 Response of Dave Tarrant when asked about ARDrone:
@@ -770,7 +787,7 @@ test ben_chat with "talk to Ben/a languages/a python".
 
 Part 4 - Registration Desk Woman
 
-There is a helpful woman in the Corridor - Middle. The helpful woman is a woman. The helpful woman carries a thing called the Dev8D lanyard. The Dev8D lanyard is a wearable, portable thing. The description of the helpful woman is "Standing behind a desk covered with conference lanyards and badges is a smiling woman. You are deeply impressed that she is able to be so chipper this early in the morning. She is pouring over various lists and logistical diagrams in front of her. It's complex enough to be either a foolproof and detailed plan for world domination, or just the food preferences of the delegates."
+There is a busy woman in the Corridor - Middle. The busy woman is a woman. The busy woman carries a thing called the Dev8D lanyard. The Dev8D lanyard is a wearable, portable thing. The description of the busy woman is "You see a woman busily working away behind the [registration desk], which is covered with [conference lanyards] and various lists. You are impressed that she is not only functional this early in the morning, but able to sort through all the information in front of her. Whatever she is looking at is complex enough to either be a foolproof and detailed plan for world domination, or just the food preferences of some of the delegates."
 
 The Lanyard is an unfamiliar thing.
 
@@ -782,19 +799,19 @@ After wearing the Lanyard for the first time:
 After wearing the Lanyard for the fifth time:
 	say "People are starting to look at you oddly. Perhaps you should just keep the lanyard on?"
 	
-The ask-suggestions of the helpful woman are { Lanyard }.
+The ask-suggestions of the busy woman are { Lanyard }.
 
-Greeting response for the helpful woman:
+Greeting response for the busy woman:
 	say "You greet the woman behind the registration desk.[paragraph break]'Hello! [if the player does not carry the Dev8D Lanyard]What is it you need?' she asks while sorting various items on the desk. [otherwise]How are you enjoying the event so far?' she asks[one of] with a smile[or][stopping]."
 
-Default response for the helpful woman during Event Starts:
+Default response for the busy woman during Event Starts:
 	say "She looks a little puzzled. 'Erm, I'm not quite sure I understand what you are asking. Have you tried asking someone in the Basecamp about it?' she replies.";
 	show topic suggestions implicitly;
 
-Default response for the helpful woman during Getting Ready:
+Default response for the busy woman during Getting Ready:
 	say "She looks up briefly from her lists and says 'They are about to start in the basecamp, you'd better get there soon! Don't worry, they'll be plenty of time to register afterwards.'".
 	
-Response of the helpful woman when asked about Lanyard during Event Starts:
+Response of the busy woman when asked about Lanyard during Event Starts:
 	if the Dev8D lanyard is not handled:
 		say "She runs her finger along the badges, looking for yours.[paragraph break]'Ah, here we go!' she exclaims. 'This is your name, isn't it?' She holds the lanyard up for you to see. You nod and she hands it over to you. 'A lot of the event rooms are on this floor - rooms 3A to 3E run from west to east along this corridor. The Venue is on the 1st floor, through the Gallery bar and I know that you've already found the Basecamp. Enjoy the event![paragraph break]You say goodbye and turn to leave but she stops you. 'Sorry, forgot to tell you something. We're just waiting on some more [make WiFi known][add Wifi ask suggestion][wifi] codes to be printed up, in case you wonder why you don't have one! It will come in time'[paragraph break]You try to remain calm, forcing yourself not to panic. You note with some horror that your phone can barely pick up Edge inside the building. Edge! A pair of paper cups and some string provides better connectivity than that!";
 		now the player carries the Dev8D lanyard;
@@ -806,5 +823,5 @@ Response of the helpful woman when asked about Lanyard during Event Starts:
 		otherwise:
 			say "She nods towards the lanyard in your hand. 'That's it. Was there something else?'" 
 
-Response of the helpful woman when asked about WiFi during Event Starts:
+Response of the busy woman when asked about WiFi during Event Starts:
 	say "You ask her about the Wifi code.[paragraph break][one of]She begins to explain how you just need to wait a little longer but stops when she notices something about the way you are standing. It may have been something to do with the way you kept your phone clutched in your hand, repeatedly raising it to check for a 3G signal and lowering it, doing curls with your arm like some tech-obsessed body builder. [paragraph break]'Well, If you are in a [italic type]real[roman type] hurry to get online, you could talk to Dave Tarrant and see if he is willing to do you a favour. He's downstairs in the Venue setting up a few things. Just don't tell him I sent you!'[or]'Did you ask Dave about the [WiFi]?'[stopping]".
