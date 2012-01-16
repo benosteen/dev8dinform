@@ -5,13 +5,13 @@ Use the serial comma.
 Include Keywords for Conversation by Matt Wigdahl.
 Include Exit Descriptions by Matthew Fletcher.
 
-The release number is 1. The story creation year is 2012. The story headline is "A day at Dev8D". The story genre is "Serious Game". The story description is "A mock-up of what the beginning of the Dev8D event might be like."
+The release number is 1. The story creation year is 2012. The story headline is "A day at Dev8D". The story genre is "Serious Game". The story description is "What the beginning of the Dev8D event might be like. Or what it definitely won't be like. Either."
 
 Book 1 - Groundwork
 
 Part 1 - Help
 
-Understand "help" as Boilerplatehelp.
+Understand "help" or "h" as Boilerplatehelp.
 
 Boilerplatehelp is an action out of world.
 
@@ -91,9 +91,11 @@ A hacker behavior rule when the hacker (called thishacker) is in an adjacent roo
 	move thishacker to the location of the player;
 	rule succeeds with result nothing.	
 
+[
 A hacker behavior rule when the hacker (called thishacker) is in the Basecamp and thishacker is not sated:
 	say "[one of][thishacker] spots the tasty muffins on display and grabs one for later.[or].[at random]";
 	rule succeeds with result nothing.
+]
 
 Every turn:
 	let the destroyed object be the object produced by the hacker behavior rules;
@@ -101,8 +103,8 @@ Every turn:
 		remove the destroyed object from play;
 		say "Now [the destroyed object] is gone.".
 
-Greeting response for a hacker:
-	say "You address the coder.  'Hi!'[paragraph break]'Hello!  What do you want to talk about?'";
+Greeting response for a hacker (called thishacker):
+	say "You greet [thishacker].  'Hi!'[paragraph break]'Hello!  What do you want to talk about?'";
 
 Implicit greeting response for hacker (called thishacker):
 	say "They turn to face you at the sound of your voice.";
