@@ -121,7 +121,7 @@ Default response for a hacker:
 
 Part 5 - Conversation topics
 
-A Tech_Idea is a kind of thing.
+A Tech_Idea is a kind of thing. The description of a Tech_Idea is usually "[one of]Something to look up later[or]Time to find yourself some connectivity and investigate[or]Something to investigate later[sticky random]."
 
 Python is a unfamiliar Tech_Idea. It is unused.
 
@@ -192,8 +192,6 @@ Getting Ready is a scene. Getting Ready begins when play begins. Getting Ready e
 
 Orientation Talk is a scene. Orientation Talk begins when the player is in the Basecamp and Orientation Talk has not ended.
 
-Event Starts is a scene.
-
 Every turn during Orientation Talk:
 	repeat through Table of Orientation Speech:
 		say "[event entry][paragraph break]";
@@ -202,6 +200,7 @@ Every turn during Orientation Talk:
 
 Orientation Talk ends when the number of filled rows in the Table of Orientation Speech is 0.
 
+Event Starts is a scene.
 Event Starts begins when Orientation Talk ends.
 
 When Event Starts begins:
@@ -209,6 +208,9 @@ When Event Starts begins:
 	move the Schedule board to Basecamp;
 	move the refreshments table to Basecamp;
 	try looking.
+
+Lang Lunchtime is a scene. Lang Lunchtime begins when Event Starts ends.
+Further Ideas break is a scene. Further Ideas break begins when Lang Lunchtime ends.
 
 Instead of going to Work rooms when the player does not hold the Dev8D lanyard during Getting Ready:
 	say "You should really head to the Basecamp room before it's too late!"
@@ -224,11 +226,11 @@ Every turn when the player is in the Region Stairwell during Event Starts:
 		say "[wandering monster attack]" [Ah, Final Fantasy III ;)]
 		
 Every turn when the player is in the Zone of Corridors:
-	if a random chance of 1 in 6 succeeds:
+	if a random chance of 1 in 8 succeeds:
 		say "[wandering monster attack]"
 
 to say wandering monster attack:
-	say "[one of]A small group of students, talking loudly, pass by you on their way to the stairs[or]You hear part of a conversation but can't work out where it is coming from. '... after lunch. I'll see you at the Computer vision session then? It'll b...' The conversation gets lost in the noise[or]'Watch out!' shouts a voice behind you. You turn and push yourself against the wall as someone rushes past you, holding a handful of flipcharts, a bag of pens and other bits and pieces. He drags several power strips behind him. He disappears out of sight[or]Some women walk past, each carrying a laptop bag and wearing the [Dev8D lanyard]. You overhear their conversation as they pass.[paragraph break]'... Have you put anything up for the evening slots yet?' says one of the women.[paragraph break]'Not yet. I'm thinking of putting my name down for a library-tech birds of a feather. What do you think?' the other replies[paragraph break]'Sure, but make it an MLA meetup instead and I'll...'[or][paragraph break]Someone coming out of a door allows you to catch part of the conversation going on inside: '...going to the javascript and jQuery workshop tomorrow, definitely! I've been putting off learning javascript properly for too long...'[then at random]."
+	say "[one of]A small group of students, talking loudly, pass by you on their way to the stairs[or]You hear part of a conversation but can't work out where it came from:[paragraph break]'... after lunch. I'll see you at the Computer vision session then? It'll b...'[or]'Watch out!' shouts a voice behind you. You turn and push yourself against the wall as someone rushes past you, holding a handful of flipcharts, a bag of pens and other bits and pieces. He drags several power strips behind him. He disappears out of sight[or]Some women walk past, each carrying a laptop bag and wearing the [Dev8D lanyard]. You overhear their conversation as they pass.[paragraph break]'... Have you put anything up for the evening slots yet?' says one of the women.[paragraph break]'Not yet. I'm thinking of putting my name down for a library-tech birds of a feather. What do you think?' the other replies[paragraph break]'Sure, but make it an MLA meetup instead and I'll...'[or][paragraph break]Someone coming out of a door allows you to catch part of the conversation going on inside: '...going to the javascript and jQuery workshop tomorrow, definitely! I've been putting off learning javascript properly for too long...'[then at random]."
 
 Table of Orientation Speech
 event
@@ -237,7 +239,7 @@ event
 "If you haven't yet registered and picked up your Dev8D lanyard[make lanyard familiar], please do so as soon as you can - it has your name on it!"
 
 
-Part 2 - Random things (Food, phone, etc)
+Part 2 - Random things (Food, phone, Wandering Mahendra)
 
 Chapter 1 - Phone
 
@@ -295,7 +297,36 @@ Event Area is a region. Work Rooms is a region.
 
 The Venue, 3A, 3B, 3C, 3D, and 3E are rooms in Work rooms. Basecamp and Work rooms are in Event Area. 
 
-Part 4 - Stairwell and entrance rooms
+Part 4 - Wandering Mahendra
+
+Mahendra Mahey is a male hacker in Basecamp. The description of Mahendra Mahey is "A harrassed-looking man, tall, his short dark hair flecked with grey[first time]. He is in constant motion around the room, checking and rechecking everything around him, seeing whether everyone is having a good time, making sure that the right posters are on the wall and that everyone has power and wifi[only]."
+
+Every turn:
+	if Orientation Talk has happened:
+		if Mahendra Mahey is in a room (called current_room):
+			let next_room be a random room which is adjacent to the current_room;
+			if Mahendra Mahey is visible:
+				say "[Mahendra Mahey] [one of]mumbles something about 'organising food' to himself and heads[or]consults his phone and a look of panic crosses his face. He quickly heads[or]Mahendra stops for a moment, eyes askance, trying to remember something. A look of dismay crosses his face and he sighs, before walking[at random] to [the next_room].";
+			move Mahendra Mahey to the next_room;
+			if Mahendra Mahey is visible:
+				say "You see [Mahendra Mahey] enter [the next_room], looking quite flustered."
+
+
+
+[
+Old wandering code - based on a set list
+
+Mahendra Mahey has a list of rooms called the wanderlust. The wanderlust of Mahendra Mahey is {ULU Entrance, Ground floor stairs, Gallery, Duck & Dive Bar, First floor stairs, Third floor stairs, Corridor - Middle, Corridor - East, 3A, 3B, 3C, 3D, 3E, Corridor - West, Corridor - Westmost, Basecamp, Corridor - Westmost, Corridor - West, Corridor - Middle, Third floor stairs, First floor stairs, Ground floor stairs }.
+
+Every turn:
+	if Orientation Talk has happened:
+		rotate the wanderlust;
+		move Mahendra Mahey to entry 1 of the wanderlust;
+		if player is in 
+
+]
+
+Part 5 - Stairwell and entrance rooms
 
 Chapter 1 - ULU Entrance
 
@@ -463,7 +494,7 @@ After examining the zelda poster:
 
 The master sword paper strip is in Ground floor stairs.
 
-Understand "tear [master sword paper strip]" or "pull off [master sword paper strip]" as pulling.
+Understand "tear [master sword paper strip]" or "yank [master sword paper strip]" or "pull off [master sword paper strip]" as pulling.
 
 Instead of taking or pulling the master sword paper strip in Ground floor stairs when the master sword paper strip is in Ground floor stairs:
 	if the master sword paper strip is not handled:
@@ -528,8 +559,8 @@ The eastern closed doors are scenery in Corridor - East. "[one of]You look throu
 
 The printed name of the eastern closed doors is "closed doors".
 
-The Corridor - West is west of the Corridor - Middle. "[one of]You walk on, towards the noise. You can see that the corridor continues west, and goes around a corner.[or] The corridor runs from east to west, where it goes around a small corner.[stopping] The entrance to room 3E is to the south."
-The Corridor - Westmost is west of the Corridor - West. "This part of the corridor narrows slightly and snakes around a corner where it ends. The door to the north leads to the [Basecamp]."
+The Corridor - West is west of the Corridor - Middle. "[one of]You walk on, towards the noise. You can see that the corridor continues north, before turning west again.[or] The corridor runs from east to west, where it goes around a small corner.[stopping] The entrance to room 3E is to the south."
+The Corridor - Westmost is north of the Corridor - West. "This part of the corridor narrows slightly and snakes around a corner where it ends. The set of double doors to the north lead to the [Basecamp]."
 
 The Male toilets are northwest of Corridor - East.
 The Female toilets are northeast of Corridor - East.
@@ -537,7 +568,7 @@ The Female toilets are northeast of Corridor - East.
 Toilet rooms is a region. The Male toilets and Female Toilets are in Toilet Rooms.
 
 Instead of going to Toilet Rooms:
-	say "[one of]As soon as your hand makes contact with the door, you realise you no longer feel the physical need to go. Well, at least you know where the toilets are for next time.[or]You don't actually need to go.[stopping]"
+	say "[one of]As soon as your hand makes contact with the door, you realise you no longer feel the physical need to go. Well, at least you know where the toilets are for next time.[or]You don't actually need to go.[or]This is a computer game. Your virtual bladder does not need to be taken care of. However, if you do need to go, consider the game 'paused' until your return.[stopping]"
 	
 Chapter 2 - Event room - corridors and generic setup
 
@@ -840,3 +871,8 @@ Response of the busy woman when asked about Lanyard during Event Starts:
 
 Response of the busy woman when asked about WiFi during Event Starts:
 	say "You ask her about the Wifi code.[paragraph break][one of]She begins to explain how you just need to wait a little longer but stops when she notices something about the way you are standing. It may have been something to do with the way you kept your phone clutched in your hand, repeatedly raising it to check for a 3G signal and lowering it, doing curls with your arm like some tech-obsessed body builder. [paragraph break]'Well, If you are in a [italic type]real[roman type] hurry to get online, you could talk to Dave Tarrant and see if he is willing to do you a favour. He's downstairs in the Venue setting up a few things. Just don't tell him I sent you!'[or]'Did you ask Dave about the [WiFi]?'[stopping]".
+
+Part 5 - Mahendra Mahey
+
+Default response for Mahendra Mahey:
+	say "He looks quite busy at the moment. Perhaps you should talk to someone else."

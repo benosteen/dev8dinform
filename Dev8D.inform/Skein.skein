@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x1a9d880" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>GNOME Inform 7</generator>
-  <activeNode nodeId="node-0x34b6030"/>
+  <activeNode nodeId="node-0x35ea1f0"/>
   <item nodeId="node-0x1a9d880">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -11906,12 +11906,12 @@ Exits: north.
   </item>
   <item nodeId="node-0x34591c0">
     <command xml:space="preserve">hi</command>
-    <result xml:space="preserve">(addressing Ben O&apos;Steen)
-You greet Ben O&apos;Steen.  &quot;Hi!&quot;
+    <result xml:space="preserve">(addressing Graham Klyne)
+You greet Graham Klyne.  &quot;Hi!&quot;
 
 &quot;Hello!  What do you want to talk about?&quot;
 
-(You could ask him about Programming languages.)
+(You could ask him about 3D Printing.)
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -11925,7 +11925,9 @@ You greet Ben O&apos;Steen.  &quot;Hi!&quot;
   </item>
   <item nodeId="node-0x3459320">
     <command xml:space="preserve">ask him about languages</command>
-    <result xml:space="preserve">You remember back to the orientation talk. &quot;I&apos;m not sure what language I should go for at lunch. What do you think?&quot; you ask.
+    <result xml:space="preserve">They turn to face you..
+
+You remember back to the orientation talk. &quot;I&apos;m not sure what language I should go for at lunch. What do you think?&quot; you ask.
 
 He shrugs his shoulders a little. &quot;To be honest, they are all pretty much the same. Pick one, learn it by writing actual code and most importantly, find out about the libraries you should use and more importantly, the libraries you shouldn&apos;t. The best way you can do that is by chatting with your peers - you know, the people like you, doing similar things to you. You can learn the most from them.&quot;
 
@@ -11964,7 +11966,7 @@ He turns back to his laptop and opens yet another terminal on the screen - you c
 
 &quot;Google it&quot; he replies with a smile. He continues to type into one of the many terminal windows on his screen.
 
-&quot;Er... okay.&quot; You had thought he would help a little more than that. You turn to leave.
+Wow. That was pretty harsh. &quot;Er... okay, whatever.&quot; you reply. You had thought he would help a little more than that. You turn to leave.
 
 &quot;Wait! I&apos;m kidding!&quot; he says. &quot;Ordinarily I&apos;d tell you to search for that online, as you&apos;ll find some of the best material there, like &quot;Dive into Python&quot;, but look around you. There&apos;s a ton of collective python experience here, the kind of experience that make the difference between searching for hours or having an issue sorted out with a quick chat.&quot; He &quot;alt-tab&apos;s back to a browser window. &quot;In fact, I think there is a python workshop due to start soon if you are keen. It&apos;s taking place next door in room 3B. Just remember, it&apos;s the community of people that makes a language great, not the other way around. Ask questions, get involved. As with anything, you get out from it more than what you put it, but you have to put something in first!&quot;
 
@@ -12076,7 +12078,216 @@ Scaredy cat.
   </item>
   <item nodeId="node-0x34b6030">
     <command xml:space="preserve">tear strip</command>
-    <result xml:space="preserve">That noun did not make sense in this context.
+    <result xml:space="preserve">Even though It&apos;s not that dangerous to go alone, you tear the strip from the bottom of the poster. 
+
+Scaredy cat.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x34b6450"/>
+    </children>
+  </item>
+  <item nodeId="node-0x34b6450">
+    <command xml:space="preserve">in</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x34b62f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x34b62f0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a master sword paper strip
+  Inspirations (empty)
+  a phone
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x34b6190"/>
+    </children>
+  </item>
+  <item nodeId="node-0x34b6190">
+    <command xml:space="preserve">x phone</command>
+    <result xml:space="preserve">You look down at your phone. No new emails, tweets, SMSs, IMs or pokes. No signal bars either, which would explain that.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x34b65b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x34b65b0">
+    <command xml:space="preserve">abstract me to Corridor - Westmost</command>
+    <result xml:space="preserve">[Abstracted.]
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x34b6710"/>
+    </children>
+  </item>
+  <item nodeId="node-0x34b6710">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Basecamp
+You enter the door and come face-to-face (well, face-to-back) with a crowd of people, all of whom are looking intently towards the other side of the room.
+
+You can see Mahendra Mahey here.
+
+Exits: south.
+
+It seems that things are just about to start, so you press forward to get a decent enough view. You manoeuvre through the throng of developers, hackers, academics and other delegates as politely as you can until you manage to get a view of the organiser who is just about to speak.
+
+&quot;Welcome! Thank you all for coming to this, the fourth Dev8D! The fourth! There are a lot of new faces out there which is excellent, great to see and I also see many people I&apos;ve met before, which is doubly excellent! Helping people meet up and talk about the things that interest or even stump you is one of the key reasons this event exists. Many of you work in small teams and can feel isolated. Sometimes you alone are the team!&quot;
+
+You hear quite a few knowing laughs from the people in the crowd. Seems you aren&apos;t alone here after all. (Maybe you should put that master sword back where you found it, eh?).
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x34b6870"/>
+    </children>
+  </item>
+  <item nodeId="node-0x34b6870">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+He continues: &quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x34b69d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x34b69d0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+If you haven&apos;t yet registered and picked up your Dev8D lanyard, please do so as soon as you can - it has your name on it!
+
+Basecamp
+Normal BASECAMP DESC.
+
+You can see a refreshments table (on which are coffee, tea, a snack buffet, and a strange code fragment), a Schedule board, and Mahendra Mahey here.
+
+Exits: south.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x34b6b30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x34b6b30">
+    <command xml:space="preserve">x mahey</command>
+    <result xml:space="preserve">A harrassed-looking man, tall, his short dark hair flecked with grey. He is in constant motion around the room, checking and rechecking everything around him, seeing whether everyone is having a good time, making sure that the right posters are on the wall and that everyone has power and wifi.
+
+Mahendra Mahey consults his phone and a look of panic crosses his face. He quickly heads to Corridor - Westmost.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x34b6c90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x34b6c90">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x34b6df0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x34b6df0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Corridor - Westmost
+This part of the corridor narrows slightly and snakes around a corner where it ends. The set of double doors to the north lead to the Basecamp.
+
+Exits: south and north to Basecamp.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x35ea090"/>
+    </children>
+  </item>
+  <item nodeId="node-0x35ea090">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Corridor - West
+You walk on, towards the noise. You can see that the corridor continues north, before turning west again. The entrance to room 3E is to the south.
+
+Exits: east, north to Corridor - Westmost and south.
+
+You look up to see Mahendra Mahey enter Corridor - West, looking quite flustered.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x35ea1f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x35ea1f0">
+    <command xml:space="preserve">z</command>
+    <result xml:space="preserve">Time passes.
+
+Mahendra Mahey Mahendra stops for a moment, eyes askance, trying to remember something. A look of dismay crosses his face and he sighs, before walking to Corridor - Middle.
 
 &gt;</result>
     <commentary xml:space="preserve"></commentary>
