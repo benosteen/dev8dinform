@@ -107,7 +107,7 @@ Greeting response for a hacker (called thishacker):
 	say "You greet [thishacker].  'Hi!'[paragraph break]'Hello!  What do you want to talk about?'";
 
 Implicit greeting response for hacker (called thishacker):
-	say "They turn to face you at the sound of your voice.";
+	say "They turn to face you..";
 
 Farewell response for the hacker:
 	say "'Bye!'[paragraph break]";
@@ -121,22 +121,24 @@ Default response for a hacker:
 
 Part 5 - Conversation topics
 
-Python is a unfamiliar thing. It is unused.
+A Tech_Idea is a kind of thing.
+
+Python is a unfamiliar Tech_Idea. It is unused.
 
 [crypto challenge]
-Codebreaking is a unfamiliar thing.
-Caesar cipher is a familiar thing.
-Advanced crypto is a familiar thing.
-decoder is an unfamiliar thing.
-Rickroll and piano cat are unfamiliar things.
+Codebreaking is a unfamiliar Tech_Idea.
+Caesar cipher is a familiar Tech_Idea.
+Advanced crypto is a familiar Tech_Idea.
+decoder is an unfamiliar Tech_Idea.
+Rickroll and piano cat are unfamiliar Tech_Idea.
 
-Ruby is a unfamiliar thing.
-Redis is a unfamiliar thing.
-Git is a unfamiliar thing.
-JQuery is a unfamiliar thing.
-Javascript is a unfamiliar thing.
-Lightning talk on Codebreaking is an unfamiliar thing.
-WiFi is a familiar thing.
+Ruby is a unfamiliar Tech_Idea.
+Redis is a unfamiliar Tech_Idea.
+Git is a unfamiliar Tech_Idea.
+JQuery is a unfamiliar Tech_Idea.
+Javascript is a unfamiliar Tech_Idea.
+Lightning talk on Codebreaking is an unfamiliar Tech_Idea.
+WiFi is a familiar Tech_Idea.
 ARDrone is familiar.
 
 3D_printing is a familiar thing.
@@ -166,12 +168,21 @@ Carry out hiding it under:
 Report hiding it under:
 	say "You shove [the noun] out of sight beneath [the second noun]."
 
+Part 7 - Player's "Inspirations"
+
+The player carries an open transparent unopenable container called Inspirations. The description of Inspirations is "....".
+
+Instead of doing anything other than examining when noun is Inspirations or second noun is Inspirations:
+	say "You want to do [italic type]what[roman type] to this virtual and rather shoddy metaphor? That's not going to do anything."
+
+Does the player mean doing something to a Tech_Idea: it is unlikely.
+
 Book 2 - Game Setting
 
 Part 1 - Scenes and scene logic
 
 When play begins:
-	say "Despite Tfl's best efforts, you've made it to Russell square tube station in one piece and only slightly behind schedule. You're a short walk away from the Developer Happiness Days event, aka Dev8D. It's taking place in the University of London Union (ULU) building and, if it is anything like it was last year, it will not only be great fun, but you'll meet plenty of new people, be introduced to new and exciting software and even learn a few fresh tricks about dealing with the software you are already using.[paragraph break]You walk out from Russell Square station and load up the directions to the ULU entrance. You walk along for a few minutes, staring down, tracking your progress with your phone. It isn't long before you approach the front door and have to pass by the throng of [smoking students] to walk inside.";
+	say "Despite Tfl's best efforts, you've made it to Russell square tube station in one piece and only slightly behind schedule. You're a short walk away from the Developer Happiness Days event or Dev8D as it is usually known. It's taking place in the University of London Union (ULU) building and, if it is anything like it was last year, it will not only be great fun, but you'll meet plenty of new people, be introduced to new and exciting software and even learn a few fresh tricks about dealing with the software you are already using.[paragraph break]You walk out from Russell Square station and load up the directions to the ULU entrance. You walk along for a few minutes, staring down, tracking your progress with your phone. It isn't long before you approach the front door and have to pass by the throng of [smoking students] to walk inside.";
 	[some item setup]
 	remove the master sword paper strip from play;
 	remove the refreshments table from play;
@@ -217,11 +228,11 @@ Every turn when the player is in the Zone of Corridors:
 		say "[wandering monster attack]"
 
 to say wandering monster attack:
-	say "[one of]A small group of students, talking loudly, pass you on their way to the stairs[or]You hear part of a conversation but can't work out where it is coming from. '... after lunch. I'll see you at the Computer vision session then? It'll b...' The conversation gets lost in the noise[or]'Watch out!' shouts a voice behind you. You turn and push yourself against the wall as someone rushes past you, holding a handful of flipcharts, a bag of pens and other bits and pieces. He drags several power strips behind him. He disappears out of sight[or]Some women walk past, each carrying a laptop bag and wearing the [Dev8D lanyard]. You overhear their conversation as they pass.[paragraph break]'... Have you put anything up for the evening slots yet?' says one of the women.[paragraph break]'Not yet. I'm thinking of putting my name down for a library-tech birds of a feather. What do you think?' the other replies[paragraph break]'Sure, but make it an MLA meetup instead and I'll...'[or][paragraph break]Someone coming out of a door allows you to catch part of the conversation going on inside: '...going to the javascript and jQuery workshop tomorrow, definitely! I've been putting off learning javascript properly for too long...'[then at random]."
+	say "[one of]A small group of students, talking loudly, pass by you on their way to the stairs[or]You hear part of a conversation but can't work out where it is coming from. '... after lunch. I'll see you at the Computer vision session then? It'll b...' The conversation gets lost in the noise[or]'Watch out!' shouts a voice behind you. You turn and push yourself against the wall as someone rushes past you, holding a handful of flipcharts, a bag of pens and other bits and pieces. He drags several power strips behind him. He disappears out of sight[or]Some women walk past, each carrying a laptop bag and wearing the [Dev8D lanyard]. You overhear their conversation as they pass.[paragraph break]'... Have you put anything up for the evening slots yet?' says one of the women.[paragraph break]'Not yet. I'm thinking of putting my name down for a library-tech birds of a feather. What do you think?' the other replies[paragraph break]'Sure, but make it an MLA meetup instead and I'll...'[or][paragraph break]Someone coming out of a door allows you to catch part of the conversation going on inside: '...going to the javascript and jQuery workshop tomorrow, definitely! I've been putting off learning javascript properly for too long...'[then at random]."
 
 Table of Orientation Speech
 event
-"It seems that things are just about to start, so you press forward to get a decent enough view. You manoeuvre through the throng of developers, hackers, academics and other delegates as politely as you can until you manage to get a view of the organiser who is just about to speak.[paragraph break]'Welcome! Thank you all for coming to this, the [italic type]fourth[roman type] Dev8D! Yes, fourth! I'm so glad to see lots of new faces out there, standing amongst those I already know! Helping people meet up and talk about the things that interest or even stump you is one of the key reasons this event exists. Many of you work in small teams and can feel isolated. Sometimes you alone are the team!'[paragraph break]You hear quite a few knowing laughs from the people in the crowd. Seems you aren't alone here after all[if player holds the master sword paper strip]. (Maybe you should put that master sword back where you found it, eh?)[end if]."
+"It seems that things are just about to start, so you press forward to get a decent enough view. You manoeuvre through the throng of developers, hackers, academics and other delegates as politely as you can until you manage to get a view of the organiser who is just about to speak.[paragraph break]'Welcome! Thank you all for coming to this, the [italic type]fourth[roman type] Dev8D! The fourth! There are a lot of new faces out there which is excellent, great to see and I also see many people I've met before, which is doubly excellent! Helping people meet up and talk about the things that interest or even stump you is one of the key reasons this event exists. Many of you work in small teams and can feel isolated. Sometimes you alone are the team!'[paragraph break]You hear quite a few knowing laughs from the people in the crowd. Seems you aren't alone here after all[if player holds the master sword paper strip]. (Maybe you should put that master sword back where you found it, eh?)[end if]."
 "He continues: '"
 "If you haven't yet registered and picked up your Dev8D lanyard[make lanyard familiar], please do so as soon as you can - it has your name on it!"
 
@@ -357,7 +368,7 @@ Rule for writing a paragraph about the dusty table:
 
 Section 4 - Under the table
 
-The hidden-under-the-table notice underlies the dusty table. The description of it is "'The Desk of Obligatory Tropes'[line break]	by Roy G. Biv.[if hidden-under-the-table notice is unused][paragraph break](Ah, go on. Have a point.)"
+The hidden-under-the-table notice underlies the dusty table. The description of it is "'The Desk of Obligatory Tropes'[line break]	by Roy G. Biv.[if hidden-under-the-table notice is unused][paragraph break](Ah, go on. Have a point.)[end if]"
 
 The hidden-under-the-table notice is unused.
 
@@ -451,6 +462,8 @@ After examining the zelda poster:
 		now the master sword paper strip is on-stage.
 
 The master sword paper strip is in Ground floor stairs.
+
+Understand "tear [master sword paper strip]" or "pull off [master sword paper strip]" as pulling.
 
 Instead of taking or pulling the master sword paper strip in Ground floor stairs when the master sword paper strip is in Ground floor stairs:
 	if the master sword paper strip is not handled:
@@ -765,7 +778,7 @@ Response of Ben O'Steen when asked about javascript:
 	say "[one of][or][stopping]"
 
 Response of Ben O'Steen when asked about python:
-	say "[one of]You ask 'So... if I wanted to learn about python and its libraries and stuff...?'[paragraph break]'Google it' he replies with a smile. He continues to type into one of the many terminal windows on his screen.[paragraph break]'Er... okay.' You had thought he would help a little more than that. You turn to leave.[paragraph break]'Wait! I'm kidding!' he says. 'Ordinarily I'd tell you to search for that online, as you'll find some of the best material there, like 'Dive into Python', but look around you. There's a ton of collective python experience here, the kind of experience that make the difference between searching for hours or having an issue sorted out with a quick chat.' He 'alt-tab's back to a browser window. 'In fact, I think there is a python workshop due to start soon if you are keen. It's taking place next door in room 3B. Just remember, it's the community of people that makes a language great, not the other way around. Ask questions, get involved. As with anything, you get out from it more than what you put it, but you have to put something in first!'[or]You ask about python again. He raises an eyebrow 'Have you checked next door yet?'[stopping]";
+	say "[one of]You ask 'So... if I wanted to learn about python and its libraries and stuff...?'[paragraph break]'Google it' he replies with a smile. He continues to type into one of the many terminal windows on his screen.[paragraph break]Wow. That was pretty harsh. 'Er... okay, whatever.' you reply. You had thought he would help a little more than that. You turn to leave.[paragraph break]'Wait! I'm kidding!' he says. 'Ordinarily I'd tell you to search for that online, as you'll find some of the best material there, like 'Dive into Python', but look around you. There's a ton of collective python experience here, the kind of experience that make the difference between searching for hours or having an issue sorted out with a quick chat.' He 'alt-tab's back to a browser window. 'In fact, I think there is a python workshop due to start soon if you are keen. It's taking place next door in room 3B. Just remember, it's the community of people that makes a language great, not the other way around. Ask questions, get involved. As with anything, you get out from it more than what you put it, but you have to put something in first!'[or]You ask about python again. He raises an eyebrow 'Have you checked next door yet?'[stopping]";
 	now python is used.
 
 Response of Ben O'Steen when asked about Codebreaking:
