@@ -182,7 +182,7 @@ Book 2 - Game Setting
 Part 1 - Scenes and scene logic
 
 When play begins:
-	say "Despite Tfl's best efforts, you've made it to Russell square tube station in one piece and only slightly behind schedule. You're a short walk away from the Developer Happiness Days event or Dev8D as it is usually known. It's taking place in the University of London Union (ULU) building and, if it is anything like it was last year, it will not only be great fun, but you'll meet plenty of new people, be introduced to new and exciting software and even learn a few fresh tricks about dealing with the software you are already using.[paragraph break]You walk out from Russell Square station and load up the directions to the ULU entrance. You walk along for a few minutes, staring down, tracking your progress with your phone. It isn't long before you approach the front door and have to pass by the throng of [smoking students] to walk inside.";
+	say "Despite Tfl's best efforts, you've made it to Russell square tube station in one piece and only slightly behind schedule. You're a short walk away from the Developer Happiness Days event or Dev8D as it is usually known. It's taking place in the University of London Union (ULU) building and, if it is anything like it was last year, it will not only be great fun, but you'll meet lots of new people who you really want to meet but don't know it yet, you'll be introduced to new, potentially unknown and exciting software and even learn a few fresh tricks about dealing with the software you are already using.[paragraph break]You walk out from Russell Square station, pull up your phone and load up the directions to the ULU entrance. You walk along for a few minutes, staring down, tracking your progress with your phone. It isn't long before you approach the front door and have to pass by the throng of [smoking students] to walk inside.";
 	[some item setup]
 	remove the master sword paper strip from play;
 	remove the refreshments table from play;
@@ -249,9 +249,15 @@ The phone can be in-signal or out-of-signal. The phone is out-of-signal.
 
 Instead of examining phone:
 	if the phone is out-of-signal:
-		say "[one of]You look down at your phone. No new emails, tweets, SMSs, IMs or pokes. No signal bars either, which would explain that.[or]No signal. No connectivity.[or]Nothing. No signal either.[then at random]";
+		say "[first time]You close the cached map directions to the venue as you won't be needing them anymore. [only][one of]No new emails, tweets, SMSs, IMs or pokes. No signal bars either, which would explain that.[or]No signal. No connectivity.[or]Nothing. No signal either.[then at random]";
 	otherwise:
-		say "[one of]You phone finally has a signal! Thousands of messages, tweets and pings pour into it, forcing you to declare attention bankruptcy and ignore the majority of them. If it's important, they'll ping you again, right? ...[or]No new messages that need your attention.[stopping]" 
+		if a random chance of 1 in 2 succeeds:
+			say "[one of]You phone finally has a signal! Thousands of messages, tweets and pings pour into it, forcing you to declare attention bankruptcy and ignore the majority of them. If it's important, they'll ping you again, right? ...[or]No new messages that need your attention.[stopping]";
+		otherwise:
+			say "[get a tweet]" 
+
+To say get a tweet:
+	say "fpp".
 
 Instead of dropping the phone:
 	say "[one of]What are you? Mad? You'd no sooner lop off one of your arms than leave your phone out for someone to take. Your life is on that phone!.[or]Er, no.[or]Not happening, so stop it.[stopping]"
@@ -306,10 +312,10 @@ Every turn:
 		if Mahendra Mahey is in a room (called current_room):
 			let next_room be a random room which is adjacent to the current_room;
 			if Mahendra Mahey is visible:
-				say "[Mahendra Mahey] [one of]mumbles something about 'organising food' to himself and heads[or]consults his phone and a look of panic crosses his face. He quickly heads[or]Mahendra stops for a moment, eyes askance, trying to remember something. A look of dismay crosses his face and he sighs, before walking[at random] to [the next_room].";
+				say "[Mahendra Mahey] [one of]mumbles something about 'checking on the coffee situation' to himself and heads[or]consults his phone and a look of panic crosses his face. He quickly heads[or]Mahendra stops for a moment, eyes askance, trying to remember something. A look of dismay crosses his face and he sighs, before walking[at random] to [the next_room].";
 			move Mahendra Mahey to the next_room;
 			if Mahendra Mahey is visible:
-				say "You see [Mahendra Mahey] enter [the next_room], looking quite flustered."
+				say "You see [Mahendra Mahey] enter [the next_room][one of], looking quite flustered.[or].[or] looking more at his phone than where he is going.[or], with a steely determination in his eye to fix something in this room. What that is, you can't tell. Perhaps he can't yet either, but still.[at random]"
 
 
 
@@ -361,14 +367,14 @@ Instead of pulling the shiny red keycard:
 Instead of taking the shiny red keycard:
 	say "[one of]Really? You think that stealing that is going to help you later? [if player holds the old lamp]I mean, taking that lamp is one thing, but come on...[end if]That keycard belongs to someone. It's probably their library card or something[or]No[or]*sigh*[or][bold type]THIEF! Stop THIEF![roman type][paragraph break](No, not really, but you need to curb that kleptomania before you start hearing this on a regular basis)[stopping]."
 
-The smell of the shiny red keycard is "You try to smell the keycard, but it's too close to the rotting fish for you to smell anything else. It probably smells like its owner's wallet anyhow. [paragraph break]Well, it did until it was pushed underneath that fish"  
+The smell of the shiny red keycard is "You try to smell the keycard, but it's too close to the rotting fish for you to smell anything else. It probably smells like its owner's wallet anyhow. [paragraph break]Well, it did until it was pushed underneath that fish."  
 
 The description of the red fish is "Fishy and obligatory. You notice that it is also red underneath all that glitter." 
 
 Instead of taking the red fish:
 	say "[one of]This is not useful. Honest.[line break][or]It's red and a fish. That should be hint enough.[stopping]"
 
-The sound of the fish is "... you hear nothing from the fish. (You are thankful it didn't start singing 'Here is a little song I wrote...' as you would've had to destroy it, to preserve the sanity of all around you.)"
+The sound of the fish is "... you hear nothing from the fish. (You are thankful it didn't start singing, as there is nothing more irritating in this world than a singing fish.)"
 
 The smell of the red fish is "Awful. Just... awful. And now you have got glitter on your cheek. Congratulations."
 
@@ -629,7 +635,7 @@ The whirring laptop is on the small project desk. The description of the whirrin
 
 Ben O'Steen is a male hacker in 3D. Ben O'Steen is hungry.
 
-The description of Ben O'Steen is "[first time]Sat in front of a creaking, straining but mainly loudly [whirring laptop] is a large, bearded man. He'd be sitting perfectly still if it wasn't for his hands moving back and forth across the keys, occasionally moving to slam repeatedly down on the 'delete' key. [only]His nametag reads: [paragraph break] 'Ben O'Steen - @benosteen'."
+The description of Ben O'Steen is "[first time]Sat in front of a creaking, straining and loudly [whirring laptop] is a heavy-set (well, fat), dark-haired man. He'd be sitting perfectly still if it wasn't for his hands moving back and forth across the keys, occasionally moving to slam repeatedly down on the 'delete' key. He pauses from this every so often, absent-mindedly running his fingers across the hair on his chin while being deep in thought. [only]His nametag reads: [paragraph break] 'Ben O'Steen - @benosteen'."
 
 Understand "Ben" as Ben O'Steen.
 
@@ -848,7 +854,7 @@ After wearing the Lanyard for the fifth time:
 The ask-suggestions of the busy woman are { Lanyard }.
 
 Greeting response for the busy woman:
-	say "You greet the woman behind the registration desk.[paragraph break]'Hello! [if the player does not carry the Dev8D Lanyard]What is it you need?' she asks while sorting various items on the desk. [otherwise]How are you enjoying the event so far?' she asks[one of] with a smile[or][stopping]."
+	say "You greet the woman behind the registration desk.[paragraph break]'Hello! [if the player does not carry the Dev8D Lanyard]What is it you need?' she asks while sorting various items on the desk[otherwise]How are you enjoying the event so far?' she asks[one of] with a smile[or][stopping][end if]."
 
 Default response for the busy woman during Event Starts:
 	say "She looks a little puzzled. 'Erm, I'm not quite sure I understand what you are asking. Have you tried asking someone in the Basecamp about it?' she replies.";
