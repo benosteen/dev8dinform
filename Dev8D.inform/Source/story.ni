@@ -638,7 +638,11 @@ The whirring laptop is on the small project desk. The description of the whirrin
 
 Ben O'Steen is a male hacker in 3D. Ben O'Steen is hungry.
 
+<<<<<<< Updated upstream
 The description of Ben O'Steen is "[first time]Sat in front of a creaking, straining and loudly [whirring laptop] is a heavy-set (well, fat), dark-haired man. He'd be sitting perfectly still if it wasn't for his hands moving back and forth across the keys, occasionally moving to slam repeatedly down on the 'delete' key. He pauses from this every so often, absent-mindedly running his fingers across the hair on his chin while being deep in thought. [only]His nametag reads: [paragraph break] 'Ben O'Steen - @benosteen'."
+=======
+The description of Ben O'Steen is "[first time]Sat in front of a very loud, wheezing, [whirring laptop] is a heavy-set, bearded man. From a distance, you think that he was sitting perfectly still, but as soon as you get closer. you can see his hands whizzing back and forth across the keys, occasionally moving to slam repeatedly down on the 'delete' key. [only]His nametag reads: [paragraph break] 'Ben O'Steen - @benosteen'."
+>>>>>>> Stashed changes
 
 Understand "Ben" as Ben O'Steen.
 
