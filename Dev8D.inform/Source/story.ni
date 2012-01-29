@@ -188,13 +188,33 @@ When play begins:
 	remove the refreshments table from play;
 	remove the Schedule board from play.
 
+A scene can be flagged. A scene is usually not flagged.
+
 Getting Ready is a scene. Getting Ready begins when play begins. Getting Ready ends when Orientation Talk begins.
 
-Orientation Talk is a scene. Orientation Talk begins when the player is in the Basecamp and Orientation Talk has not ended.
+Orientation Talk is a scene. Orientation Talk begins when Getting Ready is flagged.
 
+After going to Corridor - Middle for the first time:
+	try looking;
+	say "You can hear a murmur coming from the west. It sounds like everyone is down that way You'd better hurry.";
+	the talk is kicked off in 10 turns from now.
+	
+After going to Basecamp for the first time:
+	try looking;
+	now Getting Ready is flagged.
+
+At the time when the talk is kicked off:
+	if Orientation Talk has not ended and Getting Ready is not flagged:
+		now Getting Ready is flagged;
+		if the player is not in Basecamp:
+			say "You hear a lull in the background chatter.[line break]".
+	
 Every turn during Orientation Talk:
 	repeat through Table of Orientation Speech:
-		say "[event entry][paragraph break]";
+		if the player is in the Basecamp:
+			say "[event entry][paragraph break]";
+		otherwise:
+			say "[one of]It sounds like the event has started, because the general murmur has died down and you can just about make out a single person talking[or]The opening talk continues[stopping]."
 		blank out the whole row;
 		rule succeeds.
 
@@ -218,8 +238,8 @@ Instead of going to Work rooms when the player does not hold the Dev8D lanyard d
 Instead of going to Work rooms when the player does not hold the Dev8D lanyard:
 	say "You need to register before you get too distracted by what is going on!"	
 
-Instead of doing something other than waiting or examining during Orientation Talk:
-	say "You should listen for a little while. It's only polite after all. (Type 'wait' or 'z' to skip on through the speech.)"
+After going somewhere from the Basecamp during Orientation Talk:
+	say "[one of]You slip out and leave them to it.[or]You slip out quietly.[stopping]"
 
 Every turn when the player is in the Region Stairwell during Event Starts:
 	if a random chance of 1 in 15 succeeds:
@@ -638,11 +658,7 @@ The whirring laptop is on the small project desk. The description of the whirrin
 
 Ben O'Steen is a male hacker in 3D. Ben O'Steen is hungry.
 
-<<<<<<< Updated upstream
-The description of Ben O'Steen is "[first time]Sat in front of a creaking, straining and loudly [whirring laptop] is a heavy-set (well, fat), dark-haired man. He'd be sitting perfectly still if it wasn't for his hands moving back and forth across the keys, occasionally moving to slam repeatedly down on the 'delete' key. He pauses from this every so often, absent-mindedly running his fingers across the hair on his chin while being deep in thought. [only]His nametag reads: [paragraph break] 'Ben O'Steen - @benosteen'."
-=======
-The description of Ben O'Steen is "[first time]Sat in front of a very loud, wheezing, [whirring laptop] is a heavy-set, bearded man. From a distance, you think that he was sitting perfectly still, but as soon as you get closer. you can see his hands whizzing back and forth across the keys, occasionally moving to slam repeatedly down on the 'delete' key. [only]His nametag reads: [paragraph break] 'Ben O'Steen - @benosteen'."
->>>>>>> Stashed changes
+The description of Ben O'Steen is "[first time]Sat in front of a creaking, straining and loudly [whirring laptop] is a heavy-set (well, fat), dark-haired man. He'd be sitting perfectly still if it wasn't for his hands moving back and forth across the keys, occasionally moving to slam repeatedly down on the 'delete' key, mouthing expletives that would make any lip-reader blush. He pauses from this every so often, absent-mindedly running his fingers across the hair on his chin while being deep in thought. [only]His nametag reads: [paragraph break] 'Ben O'Steen - @benosteen'."
 
 Understand "Ben" as Ben O'Steen.
 
@@ -889,3 +905,4 @@ Part 5 - Mahendra Mahey
 
 Default response for Mahendra Mahey:
 	say "He looks quite busy at the moment. Perhaps you should talk to someone else."
+	
